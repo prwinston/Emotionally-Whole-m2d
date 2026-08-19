@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Seminar — Emotionally Whole | Winston H.K. Chew</title>
+<meta name="description" content="A half-day teach-in with Winston H.K. Chew for pastors, elders, deacons, missionaries, full-time workers and their spouses. Monday 19 October 2026, 9am–12noon.">
+<meta property="og:title" content="Emotionally Whole — A Half-Day Teach-In">
+<meta property="og:description" content="Formation for those who carry others. Monday 19 October 2026, 9:00am–12:00noon, followed by buffet lunch.">
+<meta property="og:image" content="images/cover.png">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#15120F; --ink-2:#1E1915;
+    --vellum:#E9E1CE; --vellum-dim:#B7AD95;
+    --gold:#D8A94E; --amber:#C1502E;
+    --hair:rgba(233,225,206,0.16);
+    --display:'Fraunces', serif; --body:'Source Serif 4', serif; --mono:'JetBrains Mono', monospace;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:
+      radial-gradient(60% 30% at 88% 4%, rgba(216,169,78,0.12), transparent 55%),
+      radial-gradient(50% 24% at 8% 100%, rgba(193,80,46,0.08), transparent 55%),
+      var(--ink);
+    color:var(--vellum); font-family:var(--body); font-size:18px; line-height:1.7;
+    -webkit-font-smoothing:antialiased; min-height:100vh;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:7vh 24px 12vh; position:relative;}
+  /* door-light seam signature, echoing the cover */
+  .wrap::before{
+    content:''; position:fixed; top:0; right:0; width:6px; height:100%;
+    background:linear-gradient(180deg, transparent 0%, rgba(216,169,78,0.5) 24%, rgba(255,214,140,0.9) 50%, rgba(216,169,78,0.5) 76%, transparent 100%);
+    box-shadow:0 0 34px 5px rgba(216,169,78,0.25); pointer-events:none;
+  }
+  .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:0.16em; text-transform:uppercase; color:var(--gold);}
+  h1{font-family:var(--display); font-weight:500; font-size:clamp(38px,9vw,68px); line-height:0.98; letter-spacing:-0.01em; margin:18px 0 8px;}
+  .subtitle{font-family:var(--display); font-weight:400; font-size:clamp(19px,4vw,26px); color:var(--vellum); line-height:1.25; margin-bottom:12px;}
+  .tagline{font-family:var(--display); font-weight:300; font-style:italic; font-size:clamp(15px,3vw,18px); color:var(--vellum-dim);}
+  .rule{height:1px; background:var(--hair); margin:34px 0;}
+  .invite{font-size:clamp(16px,3.4vw,18px); color:var(--vellum-dim); line-height:1.65;}
+  .invite strong{color:var(--vellum); font-weight:600;}
+
+  .holds{margin:34px 0 0;}
+  .holds .h-label{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--vellum-dim); margin-bottom:18px;}
+  .hold-item{margin-bottom:20px; padding-left:26px; position:relative;}
+  .hold-item::before{content:''; position:absolute; left:0; top:9px; width:11px; height:11px; border:1px solid var(--gold); transform:rotate(45deg);}
+  .hold-item .hi-name{font-family:var(--display); font-weight:500; font-size:clamp(19px,4vw,22px); color:var(--vellum);}
+  .hold-item .hi-desc{font-size:clamp(15px,3.2vw,16.5px); color:var(--vellum-dim); line-height:1.5; margin-top:3px;}
+  .reflect-note{font-size:14.5px; font-style:italic; color:var(--vellum-dim); margin-top:6px;}
+
+  .for-line{font-family:var(--mono); font-size:13px; letter-spacing:.03em; color:var(--vellum-dim); line-height:1.7; margin:34px 0 28px;}
+  .for-line strong{color:var(--gold);}
+
+  .details{border:1px solid var(--hair); background:rgba(233,225,206,0.03); padding:28px 26px; border-radius:2px;}
+  .drow{display:grid; grid-template-columns:120px 1fr; gap:14px; margin-bottom:16px; align-items:baseline;}
+  .drow:last-child{margin-bottom:0;}
+  .dlabel{font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold);}
+  .dval{color:var(--vellum); line-height:1.4;}
+  .dval em{color:var(--vellum-dim); font-style:italic;}
+  .dval .big{font-family:var(--display); font-weight:500; font-size:clamp(19px,4vw,22px);}
+
+  .register-cta{margin-top:26px; text-align:center;}
+  .register-cta .btn{
+    display:inline-block; font-family:var(--mono); font-size:14px; letter-spacing:0.05em; text-transform:uppercase;
+    background:var(--gold); color:var(--ink); padding:18px 30px; text-decoration:none; border-radius:2px;
+    transition:background .2s, transform .1s;
+  }
+  .register-cta .btn:hover{background:#E9BE63;}
+  .register-cta .btn:active{transform:translateY(1px);}
+  .register-cta .note{font-size:13.5px; color:var(--vellum-dim); margin-top:12px;}
+  .register-cta .note a{color:var(--gold); text-decoration:none;}
+
+  .speaker{margin-top:40px; display:flex; gap:22px; align-items:flex-start; border-top:1px solid var(--hair); padding-top:30px;}
+  .speaker img{width:96px; height:auto; border:1px solid var(--hair); flex:0 0 auto; box-shadow:0 12px 30px rgba(0,0,0,0.5);}
+  .speaker .s-text{font-size:15px; line-height:1.55; color:var(--vellum-dim);}
+  .speaker .s-text strong{color:var(--vellum); font-family:var(--display); font-weight:500; font-size:17px; display:block; margin-bottom:5px;}
+
+  .back{margin-top:36px; text-align:center;}
+  .back a{font-family:var(--mono); font-size:12px; letter-spacing:.05em; text-transform:uppercase; color:var(--vellum-dim); text-decoration:none; border-bottom:1px solid var(--hair); padding-bottom:3px;}
+  .back a:hover{color:var(--vellum);}
+
+  @media (max-width:520px){
+    .drow{grid-template-columns:1fr; gap:3px; margin-bottom:18px;}
+    .speaker{flex-direction:column; gap:16px;}
+    .speaker img{width:80px;}
+  }
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow">A half-day teach-in for those who carry others</div>
+  <h1>Emotionally Whole</h1>
+  <div class="subtitle">Formation for Those Who Carry Others</div>
+  <div class="tagline">The interior life of the Christian leader — a morning with Winston H.K. Chew</div>
+
+  <div class="rule"></div>
+
+  <p class="invite">You already know the vocabulary of emotional health. You teach it, preach it, counsel with it. This morning is about the gap between knowing it and living it — the interior work ministry can quietly crowd out. Not another set of techniques, but permission to stop performing wholeness and do the honest work — <strong>together with your spouse.</strong></p>
+
+  <div class="holds">
+    <div class="h-label">What the morning holds</div>
+    <div class="hold-item">
+      <div class="hi-name">The Mirror &amp; The Furnace</div>
+      <div class="hi-desc">Seeing yourself truly, and keeping your integrity through the long, unseen seasons.</div>
+    </div>
+    <div class="hold-item">
+      <div class="hi-name">The Ruins &amp; The Border Crossing</div>
+      <div class="hi-desc">What sustains you when the excitement is gone, and where you go when you are the one running on empty.</div>
+    </div>
+    <div class="hold-item">
+      <div class="hi-name">The Door</div>
+      <div class="hi-desc">Influence formed by character — and a word for the marriages in the room.</div>
+    </div>
+    <div class="reflect-note">Each session closes with a guided reflection you can carry home.</div>
+  </div>
+
+  <div class="for-line"><strong>FOR:</strong> Pastors · Elders · Deacons · Missionaries · Full-time Workers — and their spouses</div>
+
+  <div class="details">
+    <div class="drow"><div class="dlabel">Date</div><div class="dval"><span class="big">Monday, 19 October 2026</span></div></div>
+    <div class="drow"><div class="dlabel">Time</div><div class="dval">9:00 am – 12:00 noon &nbsp;<em>(followed by buffet lunch)</em></div></div>
+    <div class="drow"><div class="dlabel">Venue</div><div class="dval">Penang &nbsp;<em>· venue details to be confirmed</em></div></div>
+    <div class="drow"><div class="dlabel">Cost</div><div class="dval">Free registration &nbsp;<em>· a love offering will be received for our speaker</em></div></div>
+    <div class="drow"><div class="dlabel">Register by</div><div class="dval">15 September 2026</div></div>
+  </div>
+
+  <div class="register-cta">
+    <a class="btn" href="https://wa.me/60143480134?text=Hi%20Abraham%2C%20I%27d%20like%20to%20register%20for%20the%20Emotionally%20Whole%20seminar%20on%2019%20October%202026." target="_blank" rel="noopener">Register via WhatsApp</a>
+    <div class="note">Registration is handled by Abraham Gan · WhatsApp <a href="https://wa.me/60143480134" target="_blank" rel="noopener">014-348 0134</a></div>
+  </div>
+
+  <div class="speaker">
+    <img src="images/cover.png" alt="Emotionally Whole book cover">
+    <div class="s-text">
+      <strong>Winston H.K. Chew</strong>
+      An ordained minister and licensed counsellor who has spent three decades between the pulpit, the counselling room, and the boardroom — teaching emotional intelligence across four continents, and sitting with people's grief. This teach-in draws on his book, <em>Emotionally Whole: From the Mirror to the Door.</em>
+    </div>
+  </div>
+
+  <div class="back"><a href="index.html">← Back to the book</a></div>
+</div>
+</body>
+</html>
