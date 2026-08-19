@@ -111,7 +111,10 @@
 </style>
 </head>
 <body>
-
+<a class="seminar-bar" href="seminar.html">
+  <span class="sb-tag">Upcoming</span>
+  Half-day teach-in with Winston Chew · Mon 19 Oct 2026 — register free →
+</a>
 <section class="hero">
   <div>
     <span class="eyebrow">A book by Winston H.K. Chew</span>
@@ -271,6 +274,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TeamCoach International - Chat with Us</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    .seminar-bar{
+    display:block; text-decoration:none;
+    background:rgba(216,169,78,0.10);
+    border-bottom:1px solid var(--hair);
+    color:var(--vellum); font-family:var(--mono);
+    font-size:13px; letter-spacing:0.03em; text-align:center;
+    padding:12px 20px; transition:background .2s;
+  }
+  .seminar-bar:hover{ background:rgba(216,169,78,0.18); }
+  .seminar-bar .sb-tag{
+    color:var(--gold); text-transform:uppercase; letter-spacing:.12em;
+    font-size:11px; margin-right:10px;
+  }
+  @media (max-width:520px){ .seminar-bar{ font-size:11.5px; padding:10px 14px; } }
     <style>
         /* CSS styles */
     </style>
