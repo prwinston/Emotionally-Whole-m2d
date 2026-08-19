@@ -12,6 +12,7 @@ images/
   cover.png         book cover (hero)
   author.png        author portrait
 ```
+- seminar.html — standalone page for the 19 Oct 2026 teach-in (links back to index.html; uses images/cover.png)
 
 The "Buy on Amazon" buttons link to:
 https://www.amazon.com/dp/B0HDDK3DB3
