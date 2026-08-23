@@ -8,12 +8,25 @@
 <meta name="keywords" content="emotional intelligence Christian book, biblical emotional intelligence, Goleman Bible, Christian self-awareness, emotional health ministry, spiritual formation, Winston Chew">
 <meta name="author" content="Winston H.K. Chew">
 <link rel="canonical" href="https://emotionallywhole.com/">
-<meta property="og:url" content="https://emotionallywhole.com/">
-<meta name="twitter:card" content="summary_large_image">
-<meta property="og:title" content="Emotionally Whole — From the Mirror to the Door">
+<meta property="og:title" content="Emotionally Whole — Emotional Intelligence Through Biblical Characters">
 <meta property="og:description" content="You already know the vocabulary of emotional health. This book is about the gap between knowing it and living it.">
-<meta property="og:image" content="images/cover.png">
+<meta property="og:image" content="https://emotionallywhole.com/images/cover.png">
+<meta property="og:url" content="https://emotionallywhole.com/">
 <meta property="og:type" content="book">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Emotionally Whole: From the Mirror to the Door",
+  "author": { "@type": "Person", "name": "Winston H.K. Chew" },
+  "description": "Daniel Goleman's five domains of emotional intelligence read through biblical character studies, with Scripture as the final authority.",
+  "image": "https://emotionallywhole.com/images/cover.png",
+  "url": "https://emotionallywhole.com/",
+  "inLanguage": "en",
+  "genre": ["Christian Living", "Spiritual Formation", "Emotional Intelligence"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -22,7 +35,7 @@
     --vellum:#E9E1CE; --vellum-dim:#B7AD95;
     --hair:rgba(233,225,206,0.14);
     --mirror:#93AAB3; --furnace:#C1502E; --ruins:#A8967A;
-    --crossing-a:#3A5468; --crossing-b:#C88A3E; --door:#D8A94E;
+    --crossing-a:#3A5468; --crossing-b:#C88A3E; --door:#D8A94E; --gold:#D8A94E;
     --display:'Fraunces', serif; --body:'Source Serif 4', serif; --mono:'JetBrains Mono', monospace;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
@@ -36,6 +49,16 @@
   .btn.solid{background:var(--vellum); color:var(--ink);}
   .btn.solid:hover{background:var(--door); border-color:var(--door);}
   .btn.ghost:hover{background:rgba(233,225,206,0.08);}
+
+  .seminar-bar{
+    display:block; text-decoration:none;
+    background:rgba(216,169,78,0.10); border-bottom:1px solid var(--hair);
+    color:var(--vellum); font-family:var(--mono); font-size:13px; letter-spacing:0.03em;
+    text-align:center; padding:12px 20px; transition:background .2s;
+  }
+  .seminar-bar:hover{ background:rgba(216,169,78,0.18); }
+  .seminar-bar .sb-tag{ color:var(--gold); text-transform:uppercase; letter-spacing:.12em; font-size:11px; margin-right:10px; }
+  @media (max-width:520px){ .seminar-bar{ font-size:11.5px; padding:10px 14px; } }
 
   .hero{min-height:100vh; display:grid; grid-template-columns:1.1fr 0.9fr; gap:6vw; align-items:center;
     background:radial-gradient(60% 50% at 78% 20%, rgba(216,169,78,0.10), transparent 60%), var(--ink);
@@ -73,7 +96,7 @@
   #door{background:radial-gradient(24% 70% at 50% 50%, rgba(216,169,78,0.28), transparent 70%), var(--ink);}
   #door .pairing{color:var(--door);}
   #door .room-inner{text-align:center; margin:0 auto;}
-  #door .desc{margin:0 auto;}
+  #door .desc, #door .teaser, #door .claim{margin-left:auto; margin-right:auto;}
 
   .excerpt{max-width:760px; margin:0 auto; padding:14vh 8vw; border-bottom:1px solid var(--hair);}
   .excerpt .eyebrow{margin-bottom:34px;}
@@ -103,6 +126,8 @@
   .buy h2{font-size:clamp(30px,4.6vw,52px); max-width:18ch; margin:0 auto 30px;}
   .buy .cta-row{justify-content:center;}
   footer{padding:6vh 8vw; border-top:1px solid var(--hair); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-family:var(--mono); font-size:12px; color:var(--vellum-dim);}
+  footer a{color:var(--vellum-dim); text-decoration:none;}
+  footer a:hover{color:var(--vellum);}
 
   .fade{opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s ease;}
   .fade.in{opacity:1; transform:translateY(0);}
@@ -116,10 +141,12 @@
 </style>
 </head>
 <body>
+
 <a class="seminar-bar" href="seminar.html">
   <span class="sb-tag">Upcoming</span>
   Half-day teach-in with Winston Chew · Mon 19 Oct 2026 — register free →
 </a>
+
 <section class="hero">
   <div>
     <span class="eyebrow">A book by Winston H.K. Chew</span>
@@ -256,12 +283,13 @@
   <h2>A woman named Hannah stood in this exact gap three thousand years ago.</h2>
   <div class="cta-row">
     <a href="https://www.amazon.com/dp/B0HDDK3DB3" class="btn solid" target="_blank" rel="noopener">Buy on Amazon</a>
+    <a href="seminar.html" class="btn ghost">See the upcoming seminar →</a>
   </div>
 </section>
 
 <footer>
   <span>Emotionally Whole — Winston H.K. Chew</span>
-  <span>Kuala Lumpur</span>
+  <span><a href="seminar.html">Seminar</a> · Kuala Lumpur</span>
 </footer>
 
 <script>
@@ -271,38 +299,3 @@
 </script>
 </body>
 </html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeamCoach International - Chat with Us</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    .seminar-bar{
-    display:block; text-decoration:none;
-    background:rgba(216,169,78,0.10);
-    border-bottom:1px solid var(--hair);
-    color:var(--vellum); font-family:var(--mono);
-    font-size:13px; letter-spacing:0.03em; text-align:center;
-    padding:12px 20px; transition:background .2s;
-  }
-  .seminar-bar:hover{ background:rgba(216,169,78,0.18); }
-  .seminar-bar .sb-tag{
-    color:var(--gold); text-transform:uppercase; letter-spacing:.12em;
-    font-size:11px; margin-right:10px;
-  }
-  @media (max-width:520px){ .seminar-bar{ font-size:11.5px; padding:10px 14px; } }
-    
-  <style>
-        /* CSS styles */
-    </style>
-    <script>
-        document.addEventListener('contextmenu', function(event) {
-            event.preventDefault();
-        });
-    </script>
-</head>
-<body>
-    <!-- Page content -->
-

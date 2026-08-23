@@ -1,59 +1,52 @@
-# Emotionally Whole — website (static, no forms)
+# Emotionally Whole — website (static, two pages)
 
-A single-page marketing site. No comment form, no backend, no configuration —
-just files. This makes deployment simple and removes every step that was
-causing trouble before.
+A static marketing site for *Emotionally Whole* by Winston H.K. Chew.
+No backend, no build step, no configuration — just files. Deploys anywhere
+that hosts static sites (Cloudflare Pages, Netlify, GitHub Pages).
 
-## What's in this folder
+## Files
 
 ```
-index.html          the whole site
+index.html          main book page (hero, five domains, excerpt,
+                    endorsements, author, contact, buy)
+seminar.html        19 Oct 2026 teach-in page (hosted by Marketplace Mission)
+sitemap.xml         lists both pages for search engines
+robots.txt          allows crawlers, points to the sitemap
 images/
-  cover.png         book cover (hero)
+  cover.png         book cover
   author.png        author portrait
+  marketplace-mission.jpg   seminar host logo
 ```
-- seminar.html — standalone page for the 19 Oct 2026 teach-in (links back to index.html; uses images/cover.png)
 
-The "Buy on Amazon" buttons link to:
-https://www.amazon.com/dp/B0HDDK3DB3
+All files sit at the repository ROOT (same level), with images inside the
+`images/` folder. `index.html` links to `seminar.html` (announcement bar at the
+top, buttons in the footer and buy section); `seminar.html` links back to
+`index.html`.
 
-The contact section lists the author's email:
-thrivemindxmento@gmail.com
+## Key links baked in
 
-## Deploy to Cloudflare Pages (drag and drop — easiest)
+- Buy button → https://www.amazon.com/dp/B0HDDK3DB3
+- Contact email → thrivemindxmento@gmail.com
+- Seminar registration → WhatsApp 014-348 0134 (as wa.me/60143480134)
 
-Because there is no backend anymore, the simple drag-and-drop upload works
-perfectly. You do NOT need Git, Wrangler, KV, or any binding.
+## Deploy (Cloudflare Pages via GitHub — current setup)
 
-1. Sign in at https://dash.cloudflare.com
-2. Go to **Workers & Pages**.
-3. Choose the option to **upload assets / deploy a site** (not "Create Worker").
-   If the interface pushes you toward Workers, look specifically for the
-   **"Upload"** or **"Drag and drop"** wording.
-4. Drag in the **contents of this folder** — that means `index.html` and the
-   `images` folder together. Do NOT drag the outer folder itself; the
-   `index.html` file must sit at the top level of what you upload.
-5. Give the project a name (e.g. `emotionally-whole`) and deploy.
-6. Your site goes live at `https://emotionally-whole.pages.dev` (or similar).
+Commit these files to the repo root. Cloudflare auto-redeploys on each push.
+No KV, no Functions, no bindings required — this is pure static.
 
-## If Cloudflare keeps redirecting you to "Create Worker"
+## SEO notes
 
-Cloudflare merged Workers and Pages in 2025 and the menus shifted. Two fallbacks:
+- Both pages have title tags, meta descriptions, keywords, canonical URLs,
+  Open Graph tags, and JSON-LD structured data (Book schema on index,
+  Event schema on seminar).
+- sitemap.xml and robots.txt are included. After deploying, submit the sitemap
+  in Google Search Console: Sitemaps > enter `sitemap.xml` > Submit.
+- All canonical/URL tags assume the live domain is https://emotionallywhole.com
+  — if the final domain differs, update those URLs in index.html, seminar.html,
+  sitemap.xml, and robots.txt.
 
-- **Any static host works.** Because this is now pure static files, you can drop
-  this same folder onto Netlify, GitHub Pages, Vercel, or Cloudflare — all of
-  them accept a plain folder of HTML/images. Netlify's drag-and-drop
-  (app.netlify.com/drop) is currently the least fussy: just drag the folder's
-  contents onto the page and it deploys instantly.
+## Still to confirm
 
-## Custom domain
-
-Once deployed, open the project's **Custom domains** tab and follow the prompt
-to attach your own domain. If the domain is already on Cloudflare, it is one
-click.
-
-## Editing later
-
-Everything is in `index.html`. To change the Amazon link, the email address,
-or any text, open that one file in any text editor, edit, save, and re-upload
-the folder. There is nothing else to keep in sync.
+- Seminar VENUE: currently "Penang · venue details to be confirmed" in
+  seminar.html — replace with the full venue name and address when known.
+- WhatsApp country code: links use 60 (Malaysia). Confirm this is correct.
