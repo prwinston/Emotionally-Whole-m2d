@@ -125,6 +125,21 @@
   .buy{padding:16vh 8vw; text-align:center; background:radial-gradient(50% 60% at 50% 50%, rgba(216,169,78,0.12), transparent 70%);}
   .buy h2{font-size:clamp(30px,4.6vw,52px); max-width:18ch; margin:0 auto 30px;}
   .buy .cta-row{justify-content:center;}
+  .stores{
+    max-width:420px; margin:44px auto 0; padding:26px 30px;
+    border:1px solid var(--hair); border-radius:2px;
+    background:rgba(233,225,206,0.03);
+  }
+  .stores-label{
+    display:block; font-family:var(--mono); font-size:11px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--gold); margin-bottom:14px;
+  }
+  .stores-list{list-style:none; margin:0; padding:0;}
+  .stores-list li{
+    font-family:var(--display); font-weight:500; font-size:20px; color:var(--vellum);
+    padding:8px 0; border-top:1px solid var(--hair);
+  }
+  .stores-list li:first-child{border-top:none;}
   footer{padding:6vh 8vw; border-top:1px solid var(--hair); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-family:var(--mono); font-size:12px; color:var(--vellum-dim);}
   footer a{color:var(--vellum-dim); text-decoration:none;}
   footer a:hover{color:var(--vellum);}
@@ -138,9 +153,35 @@
     .author{grid-template-columns:1fr;}
   }
   @media (prefers-reduced-motion: reduce){ .fade{opacity:1; transform:none; transition:none;} }
+
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding:14px 8vw; background:rgba(21,18,15,0.92); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hair);
+  }
+  .topnav .brand{font-family:var(--display); font-weight:500; font-size:16px; color:var(--vellum); text-decoration:none; letter-spacing:-0.01em;}
+  .topnav .links{display:flex; gap:22px; align-items:center;}
+  .topnav .links a{font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--vellum-dim); text-decoration:none; transition:color .2s;}
+  .topnav .links a:hover, .topnav .links a.active{color:var(--gold);}
+  @media (max-width:600px){
+    .topnav{padding:12px 20px; flex-direction:column; gap:8px;}
+    .topnav .links{gap:16px;}
+    .topnav .links a{font-size:11px;}
+  }
 </style>
 </head>
 <body>
+
+<nav class="topnav">
+  <a class="brand" href="index.html">Emotionally Whole</a>
+  <div class="links">
+    <a href="index.html" class="active">The Book</a>
+    <a href="emotional-intelligence-christian-leaders.html">Guide for Leaders</a>
+    <a href="seminar.html">Seminar</a>
+    <a href="https://www.amazon.com/dp/B0HDDK3DB3" target="_blank" rel="noopener">Buy</a>
+  </div>
+</nav>
 
 <a class="seminar-bar" href="seminar.html">
   <span class="sb-tag">Upcoming</span>
@@ -284,6 +325,14 @@
   <div class="cta-row">
     <a href="https://www.amazon.com/dp/B0HDDK3DB3" class="btn solid" target="_blank" rel="noopener">Buy on Amazon</a>
     <a href="seminar.html" class="btn ghost">See the upcoming seminar →</a>
+  </div>
+
+  <div class="stores">
+    <span class="stores-label">Also available in Malaysia at</span>
+    <ul class="stores-list">
+      <li>Canaanland</li>
+      <li>Precious Pages</li>
+    </ul>
   </div>
 </section>
 
