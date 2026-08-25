@@ -97,6 +97,22 @@
     .speaker img{width:80px;}
   }
   @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto;} }
+
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding:14px 24px; background:rgba(21,18,15,0.92); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hair);
+  }
+  .topnav .brand{font-family:var(--display); font-weight:500; font-size:16px; color:var(--vellum); text-decoration:none; letter-spacing:-0.01em;}
+  .topnav .links{display:flex; gap:22px; align-items:center;}
+  .topnav .links a{font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--vellum-dim); text-decoration:none; transition:color .2s;}
+  .topnav .links a:hover, .topnav .links a.active{color:var(--gold);}
+  @media (max-width:600px){
+    .topnav{padding:12px 18px; flex-direction:column; gap:8px;}
+    .topnav .links{gap:16px;}
+    .topnav .links a{font-size:11px;}
+  }
 </style>
 <script type="application/ld+json">
 {
@@ -137,6 +153,16 @@
 </script>
 </head>
 <body>
+<nav class="topnav">
+  <a class="brand" href="index.html">Emotionally Whole</a>
+  <div class="links">
+    <a href="index.html">The Book</a>
+    <a href="emotional-intelligence-christian-leaders.html">Guide for Leaders</a>
+    <a href="seminar.html" class="active">Seminar</a>
+    <a href="https://www.amazon.com/dp/B0HDDK3DB3" target="_blank" rel="noopener">Buy</a>
+  </div>
+</nav>
+
 <div class="wrap">
   <div class="eyebrow">A half-day teach-in for those who carry others</div>
   <h1>Emotionally Whole</h1>
