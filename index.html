@@ -58,7 +58,9 @@
   }
   .seminar-bar:hover{ background:rgba(216,169,78,0.18); }
   .seminar-bar .sb-tag{ color:var(--gold); text-transform:uppercase; letter-spacing:.12em; font-size:11px; margin-right:10px; }
-  @media (max-width:520px){ .seminar-bar{ font-size:11.5px; padding:10px 14px; } }
+  .seminar-bar .sb-note{ display:block; margin-top:6px; color:var(--vellum-dim); font-size:12px; letter-spacing:.01em; }
+  .seminar-bar .sb-note b{ color:var(--gold); font-weight:500; }
+  @media (max-width:520px){ .seminar-bar{ font-size:11.5px; padding:10px 14px; } .seminar-bar .sb-note{ font-size:11px; } }
 
   .hero{min-height:100vh; display:grid; grid-template-columns:1.1fr 0.9fr; gap:6vw; align-items:center;
     background:radial-gradient(60% 50% at 78% 20%, rgba(216,169,78,0.10), transparent 60%), var(--ink);
@@ -239,6 +241,7 @@
 <a class="seminar-bar" href="seminar.html">
   <span class="sb-tag">Upcoming</span>
   Half-day teach-in with Winston Chew · Mon 19 Oct 2026 — register free →
+  <span class="sb-note">With warm thanks to those who serve: <b>every fellow minister who registers will receive a signed copy of the book — a complimentary gift from the author.</b></span>
 </a>
 
 <section class="hero">
