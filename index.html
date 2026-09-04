@@ -191,46 +191,6 @@
     .topnav .links a{font-size:11px;}
   }
 
-  /* ---- Reader reviews ---- */
-  .reviews{max-width:860px; margin:0 auto; padding:12vh 8vw; border-bottom:1px solid var(--hair);}
-  .reviews .eyebrow{margin-bottom:22px;}
-  .reviews h2{font-size:clamp(28px,3.4vw,40px); margin-bottom:26px;}
-  .rev-summary{display:flex; align-items:baseline; gap:18px; flex-wrap:wrap; margin-bottom:40px; padding-bottom:28px; border-bottom:1px solid var(--hair);}
-  .rev-avg{font-family:var(--display); font-weight:500; font-size:clamp(44px,6vw,64px); line-height:1; color:var(--vellum);}
-  .rev-summary .stars{font-size:22px; letter-spacing:2px;}
-  .rev-count{font-family:var(--mono); font-size:13px; color:var(--vellum-dim); letter-spacing:.04em;}
-  .stars{color:var(--door);}
-  .stars .empty{color:rgba(216,169,78,0.25);}
-  .rev-list{display:flex; flex-direction:column; gap:1px; background:var(--hair);}
-  .rev-item{background:var(--ink); padding:26px 28px;}
-  .rev-item.hidden-rev{opacity:0.45;}
-  .rev-item .rev-top{display:flex; justify-content:space-between; align-items:baseline; gap:16px; flex-wrap:wrap; margin-bottom:10px;}
-  .rev-item .rev-name{font-family:var(--display); font-weight:500; font-size:19px; color:var(--vellum);}
-  .rev-item .rev-meta{font-family:var(--mono); font-size:11px; color:var(--vellum-dim); letter-spacing:.04em;}
-  .rev-item .rev-stars{font-size:15px; letter-spacing:1px; margin-bottom:12px;}
-  .rev-item .rev-text{font-size:17px; line-height:1.6; color:var(--vellum-dim);}
-  .rev-item .mod-row{display:flex; gap:14px; margin-top:16px;}
-  .rev-item .mod-row button{font-family:var(--mono); font-size:11px; letter-spacing:.06em; text-transform:uppercase; background:transparent; border:1px solid var(--hair); color:var(--vellum-dim); padding:6px 12px; cursor:pointer; transition:color .2s, border-color .2s;}
-  .rev-item .mod-row button:hover{color:var(--vellum); border-color:var(--vellum-dim);}
-  .rev-item .mod-row button.danger:hover{color:var(--furnace); border-color:var(--furnace);}
-  .rev-empty{font-family:var(--body); font-size:18px; color:var(--vellum-dim); font-style:italic; padding:8px 0 30px;}
-  .rev-form{margin-top:48px; padding-top:40px; border-top:1px solid var(--hair);}
-  .rev-form h3{font-family:var(--display); font-weight:500; font-size:24px; margin-bottom:24px;}
-  .rev-field{margin-bottom:22px;}
-  .rev-field label{display:block; font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--vellum-dim); margin-bottom:10px;}
-  .rev-field input, .rev-field textarea{width:100%; background:rgba(233,225,206,0.04); border:1px solid var(--hair); color:var(--vellum); font-family:var(--body); font-size:17px; padding:14px 16px; border-radius:2px; transition:border-color .2s;}
-  .rev-field input:focus, .rev-field textarea:focus{outline:none; border-color:var(--door);}
-  .rev-field textarea{min-height:120px; resize:vertical; line-height:1.6;}
-  .star-pick{display:inline-flex; gap:6px; font-size:30px; cursor:pointer;}
-  .star-pick span{color:rgba(216,169,78,0.28); transition:color .12s;}
-  .star-pick span.on{color:var(--door);}
-  .rev-form .rev-error{font-family:var(--mono); font-size:12px; color:var(--furnace); margin-top:6px; min-height:16px;}
-  .rev-thanks{font-family:var(--mono); font-size:13px; color:var(--door); margin-top:14px;}
-  .mod-bar{margin-top:40px; font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--vellum-dim);}
-  .mod-bar a{color:var(--vellum-dim); text-decoration:none; border-bottom:1px solid var(--hair); cursor:pointer;}
-  .mod-bar a:hover{color:var(--gold); border-color:var(--gold);}
-  .mod-bar.active{color:var(--door);}
-
   /* ---- Read-sample invitation ---- */
   .sample-cta{
     max-width:960px; margin:0 auto; padding:14vh 8vw; border-bottom:1px solid var(--hair);
@@ -266,12 +226,11 @@
     <a href="blog.html">Reflections</a>
     <a href="seminar.html">Seminar</a>
     <a href="read-sample.html">Read a Sample</a>
-    <a href="#reviews">Reviews</a>
     <div class="buy-menu">
       <button type="button" class="buy-trigger" aria-haspopup="true" aria-expanded="false">Buy ▾</button>
       <div class="buy-drop">
         <a href="https://www.amazon.com/dp/B0HDDK3DB3" target="_blank" rel="noopener">Amazon</a>
-        <a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland <span>Malaysia</span></a>
+        <a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland Bookstore <span>Malaysia</span></a>
       </div>
     </div>
   </div>
@@ -300,7 +259,7 @@
   <div class="stores">
     <span class="stores-label">Also available in Malaysia at</span>
     <ul class="stores-list">
-      <li><a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland</a></li>
+      <li><a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland Bookstore</a></li>
    </ul>
   </div>
 </section>
@@ -437,63 +396,13 @@
   <a class="mail" href="mailto:thrivemindxmento@gmail.com">thrivemindxmento@gmail.com</a>
 </section>
 
-<section class="reviews fade" id="reviews">
-  <span class="eyebrow">Reader reviews</span>
-  <h2>What readers are saying</h2>
-
-  <div class="rev-summary" id="revSummary">
-    <div class="rev-avg" id="revAvg">—</div>
-    <div>
-      <div class="stars" id="revAvgStars"></div>
-      <div class="rev-count" id="revCount">No reviews yet</div>
-    </div>
-  </div>
-
-  <div class="rev-list" id="revList"></div>
-  <div class="rev-empty" id="revEmpty">Be the first to leave a review.</div>
-
-  <div class="rev-form">
-    <h3>Leave a review</h3>
-    <div class="rev-field">
-      <label>Your rating</label>
-      <div class="star-pick" id="starPick" role="radiogroup" aria-label="Star rating">
-        <span data-v="1" role="radio" aria-label="1 star">★</span>
-        <span data-v="2" role="radio" aria-label="2 stars">★</span>
-        <span data-v="3" role="radio" aria-label="3 stars">★</span>
-        <span data-v="4" role="radio" aria-label="4 stars">★</span>
-        <span data-v="5" role="radio" aria-label="5 stars">★</span>
-      </div>
-    </div>
-    <div class="rev-field">
-      <label for="revName">Your name</label>
-      <input type="text" id="revName" maxlength="60" placeholder="e.g. Sarah T." autocomplete="name">
-    </div>
-    <div class="rev-field">
-      <label for="revText">Your review</label>
-      <textarea id="revText" maxlength="1200" placeholder="What did this book surface for you?"></textarea>
-    </div>
-    <button class="btn solid" id="revSubmit" type="button">Post review</button>
-    <div class="rev-error" id="revError"></div>
-    <div class="rev-thanks" id="revThanks" style="display:none;">Thank you — your review has been posted.</div>
-  </div>
-
-  <div class="mod-bar" id="modBar" style="display:none;"><a id="modToggle">Manage reviews</a></div>
-</section>
-
 <section class="buy fade" id="buy">
   <span class="eyebrow">Available now</span>
   <h2>A woman named Hannah stood in this exact gap three thousand years ago.</h2>
   <div class="cta-row">
     <a href="https://www.amazon.com/dp/B0HDDK3DB3" class="btn solid" target="_blank" rel="noopener">Buy on Amazon</a>
-    <a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" class="btn solid" target="_blank" rel="noopener">Buy at Canaanland (Malaysia)</a>
+    <a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" class="btn solid" target="_blank" rel="noopener">Buy at Canaanland Bookstore (Malaysia)</a>
     <a href="seminar.html" class="btn ghost">See the upcoming seminar →</a>
-  </div>
-
-  <div class="stores">
-    <span class="stores-label">Also available in Malaysia at</span>
-    <ul class="stores-list">
-      <li><a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland</a></li>
-    </ul>
   </div>
 </section>
 
@@ -508,235 +417,6 @@
   targets.forEach(t=>io.observe(t));
 </script>
 
-<script>
-/* ============================================================
-   Reader reviews + moderation  (Cloudflare Worker + KV backend)
-   -------------------------------------------------------------
-   Reviews are shared across ALL visitors via the API below.
-   If the API is unreachable, the page falls back to this browser's
-   localStorage so the feature never appears broken.
-
-   API_BASE: same-origin "/api" once the Worker is routed on your
-   domain (see backend/README.md). Or set a full Worker URL.
-   Moderation is authorized with the MOD_TOKEN you set as a Worker
-   secret — you paste it when you unlock #admin (never stored in code).
-   ============================================================ */
-const API_BASE = "/api";
-const STORE_KEY = "ew_reviews_v1";        // local fallback cache
-const TOKEN_KEY = "ew_mod_token";         // remembers your token in THIS browser only
-
-let modActive = false;
-let modToken = sessionStorage.getItem(TOKEN_KEY) || "";
-let pickedRating = 0;
-let reviews = [];                          // current visible/known reviews
-
-/* ---------- local fallback cache ---------- */
-function localLoad(){ try { return JSON.parse(localStorage.getItem(STORE_KEY)) || []; } catch(e){ return []; } }
-function localSave(list){ localStorage.setItem(STORE_KEY, JSON.stringify(list)); }
-
-/* ---------- API layer with graceful fallback ---------- */
-async function apiList(){
-  try {
-    const url = API_BASE + "/reviews" + (modActive ? "?admin=1" : "");
-    const res = await fetch(url, { headers: modActive ? { authorization: "Bearer " + modToken } : {} });
-    if(!res.ok) throw new Error("status " + res.status);
-    const data = await res.json();
-    localSave(data.reviews);               // keep a local mirror
-    return data.reviews;
-  } catch(e){
-    // fallback: local cache, filtered like the server would
-    const all = localLoad();
-    return modActive ? all : all.filter(r => !r.hidden);
-  }
-}
-async function apiAdd(review){
-  try {
-    const res = await fetch(API_BASE + "/reviews", {
-      method: "POST",
-      headers: { "content-type": "application/json" },
-      body: JSON.stringify(review),
-    });
-    if(!res.ok) throw new Error("status " + res.status);
-    return true;
-  } catch(e){
-    const all = localLoad();
-    all.push({ ...review, id: Date.now().toString(36)+Math.random().toString(36).slice(2,6), date: Date.now(), hidden: false });
-    localSave(all);
-    return false; // saved locally only
-  }
-}
-async function apiModerate(id, method, bodyObj){
-  const res = await fetch(API_BASE + "/reviews/" + id, {
-    method,
-    headers: { "content-type": "application/json", authorization: "Bearer " + modToken },
-    body: bodyObj ? JSON.stringify(bodyObj) : undefined,
-  });
-  if(res.status === 401) throw new Error("unauthorized");
-  if(!res.ok) throw new Error("status " + res.status);
-}
-
-/* ---------- rendering ---------- */
-function starString(n){
-  let s = "";
-  for(let i=1;i<=5;i++) s += i<=n ? "★" : '<span class="empty">★</span>';
-  return s;
-}
-function fmtDate(ts){
-  try { return new Date(ts).toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}); }
-  catch(e){ return ""; }
-}
-function esc(str){
-  return String(str).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-}
-
-function paint(){
-  const visible = reviews;
-  const forAvg = reviews.filter(r => !r.hidden);
-
-  const listEl = document.getElementById('revList');
-  const emptyEl = document.getElementById('revEmpty');
-  listEl.innerHTML = "";
-
-  if(visible.length === 0){
-    emptyEl.style.display = "block";
-  } else {
-    emptyEl.style.display = "none";
-    visible.slice().reverse().forEach(r => {
-      const div = document.createElement('div');
-      div.className = "rev-item" + (r.hidden ? " hidden-rev" : "");
-      let mod = "";
-      if(modActive){
-        mod = `<div class="mod-row">
-          <button data-act="toggle" data-id="${r.id}">${r.hidden ? "Show" : "Hide"}</button>
-          <button class="danger" data-act="delete" data-id="${r.id}">Delete</button>
-        </div>`;
-      }
-      div.innerHTML = `
-        <div class="rev-top">
-          <span class="rev-name">${esc(r.name)}${r.hidden ? ' · <span style="color:var(--furnace)">hidden</span>' : ''}</span>
-          <span class="rev-meta">${fmtDate(r.date)}</span>
-        </div>
-        <div class="rev-stars stars">${starString(r.rating)}</div>
-        <div class="rev-text">${esc(r.text)}</div>
-        ${mod}`;
-      listEl.appendChild(div);
-    });
-  }
-
-  const avgEl = document.getElementById('revAvg');
-  const avgStarsEl = document.getElementById('revAvgStars');
-  const countEl = document.getElementById('revCount');
-  if(forAvg.length === 0){
-    avgEl.textContent = "—";
-    avgStarsEl.innerHTML = starString(0);
-    countEl.textContent = "No reviews yet";
-  } else {
-    const avg = forAvg.reduce((s,r)=>s+r.rating,0) / forAvg.length;
-    avgEl.textContent = avg.toFixed(1);
-    avgStarsEl.innerHTML = starString(Math.round(avg));
-    countEl.textContent = forAvg.length + (forAvg.length===1 ? " review" : " reviews");
-  }
-}
-
-async function refresh(){
-  reviews = await apiList();
-  paint();
-}
-
-/* ---------- star picker ---------- */
-const starPick = document.getElementById('starPick');
-const starEls = [...starPick.querySelectorAll('span')];
-function paintPick(n){ starEls.forEach(s => s.classList.toggle('on', +s.dataset.v <= n)); }
-starEls.forEach(s => {
-  s.addEventListener('mouseenter', () => paintPick(+s.dataset.v));
-  s.addEventListener('click', () => { pickedRating = +s.dataset.v; paintPick(pickedRating); });
-});
-starPick.addEventListener('mouseleave', () => paintPick(pickedRating));
-
-/* ---------- submit ---------- */
-document.getElementById('revSubmit').addEventListener('click', async () => {
-  const name = document.getElementById('revName').value.trim();
-  const text = document.getElementById('revText').value.trim();
-  const err = document.getElementById('revError');
-  const thanks = document.getElementById('revThanks');
-  const btn = document.getElementById('revSubmit');
-  err.textContent = ""; thanks.style.display = "none";
-
-  if(!pickedRating){ err.textContent = "Please choose a star rating."; return; }
-  if(name.length < 2){ err.textContent = "Please enter your name."; return; }
-  if(text.length < 4){ err.textContent = "Please write a short review."; return; }
-
-  btn.disabled = true; btn.textContent = "Posting…";
-  const online = await apiAdd({ name, text, rating: pickedRating });
-  btn.disabled = false; btn.textContent = "Post review";
-
-  document.getElementById('revName').value = "";
-  document.getElementById('revText').value = "";
-  pickedRating = 0; paintPick(0);
-  thanks.textContent = online ? "Thank you — your review has been posted." : "Saved on this device (couldn't reach the server — it will not be shared).";
-  thanks.style.display = "block";
-  await refresh();
-});
-
-/* ---------- moderation actions ---------- */
-document.getElementById('revList').addEventListener('click', async (e) => {
-  const btn = e.target.closest('button[data-act]');
-  if(!btn || !modActive) return;
-  const id = btn.dataset.id;
-  try {
-    if(btn.dataset.act === "delete"){
-      if(!confirm("Delete this review permanently?")) return;
-      await apiModerate(id, "DELETE");
-    } else if(btn.dataset.act === "toggle"){
-      const r = reviews.find(x => x.id === id);
-      await apiModerate(id, "PATCH", { hidden: !(r && r.hidden) });
-    }
-    await refresh();
-  } catch(err){
-    alert(err.message === "unauthorized" ? "Your moderation token was rejected." : "Action failed — check your connection.");
-  }
-});
-
-/* ---------- moderation unlock ---------- */
-document.getElementById('modToggle').addEventListener('click', async () => {
-  const bar = document.getElementById('modBar');
-  if(modActive){
-    modActive = false; modToken = "";
-    sessionStorage.removeItem(TOKEN_KEY);
-    bar.classList.remove('active');
-    document.getElementById('modToggle').textContent = "Manage reviews";
-    await refresh();
-    return;
-  }
-  const pass = prompt("Enter your moderation token:");
-  if(pass === null || pass === "") return;
-  // verify by requesting the admin list
-  try {
-    const res = await fetch(API_BASE + "/reviews?admin=1", { headers: { authorization: "Bearer " + pass } });
-    if(res.status === 401){ alert("Incorrect token."); return; }
-    if(!res.ok) throw new Error();
-    modToken = pass; modActive = true;
-    sessionStorage.setItem(TOKEN_KEY, pass);
-    bar.classList.add('active');
-    document.getElementById('modToggle').textContent = "Exit moderation";
-    await refresh();
-  } catch(err){
-    alert("Couldn't reach the moderation API. Is the Worker deployed?");
-  }
-});
-
-/* ---------- init ---------- */
-refresh();
-
-/* Reveal moderation link only for the owner: visit with #admin in the URL */
-function checkAdminReveal(){
-  if(location.hash.toLowerCase() === "#admin"){
-    document.getElementById('modBar').style.display = "block";
-  }
-}
-checkAdminReveal();
-window.addEventListener('hashchange', checkAdminReveal);
-</script>
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"23edc959a4054d97a32d53735a78340c","r":1}' crossorigin="anonymous"></script>
 <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3425e0a38624bd7',t:'MTc4ODI0NTcwNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
