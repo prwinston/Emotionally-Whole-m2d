@@ -12,7 +12,7 @@
 <meta property="og:url" content="https://emotionallywhole.com/read-sample.html">
 <meta property="og:type" content="book">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,400i;8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;1,8..60,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root{
     --ink:#15120F; --ink-2:#1C1815;
@@ -99,6 +99,21 @@
   .btn.solid:hover{background:var(--door); border-color:var(--door);}
   .btn.ghost:hover{background:rgba(233,225,206,0.08);}
 
+  .excerpts{position:relative;}
+  .excerpts > input{position:absolute; opacity:0; pointer-events:none;}
+  .tabbar{display:flex; flex-wrap:wrap; gap:8px; justify-content:center; margin:0 0 44px;}
+  .tabbar label{font-family:var(--mono); font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--vellum-dim); border:1px solid var(--hair); border-radius:2px; padding:11px 16px; cursor:pointer; display:flex; gap:8px; align-items:baseline; transition:color .2s, border-color .2s, background .2s;}
+  .tabbar label b{font-weight:500; color:var(--door);}
+  .tabbar label:hover{color:var(--vellum); border-color:rgba(233,225,206,0.35);}
+  .panel{display:none;}
+  #ex1:checked ~ .tabbar label[for=ex1], #ex2:checked ~ .tabbar label[for=ex2], #ex3:checked ~ .tabbar label[for=ex3], #ex4:checked ~ .tabbar label[for=ex4], #ex5:checked ~ .tabbar label[for=ex5]{color:var(--ink); background:var(--vellum); border-color:var(--vellum);}
+  #ex1:checked ~ .tabbar label[for=ex1] b, #ex2:checked ~ .tabbar label[for=ex2] b, #ex3:checked ~ .tabbar label[for=ex3] b, #ex4:checked ~ .tabbar label[for=ex4] b, #ex5:checked ~ .tabbar label[for=ex5] b{color:var(--ink);}
+  #ex1:focus-visible ~ .tabbar label[for=ex1], #ex2:focus-visible ~ .tabbar label[for=ex2], #ex3:focus-visible ~ .tabbar label[for=ex3], #ex4:focus-visible ~ .tabbar label[for=ex4], #ex5:focus-visible ~ .tabbar label[for=ex5]{outline:2px solid var(--door); outline-offset:3px;}
+  #ex1:checked ~ .panels .p1, #ex2:checked ~ .panels .p2, #ex3:checked ~ .panels .p3, #ex4:checked ~ .panels .p4, #ex5:checked ~ .panels .p5{display:block;}
+  .panel h3{margin-top:0;}
+  .panel .gap{text-align:center; color:var(--vellum-dim); letter-spacing:.5em; margin:4px 0 22px;}
+  .panel .cont{display:inline-block; margin-top:10px; font-family:var(--mono); font-size:13px; letter-spacing:.06em; text-transform:uppercase; color:var(--door); text-decoration:none; border-bottom:1px solid rgba(216,169,78,0.4); padding-bottom:3px;}
+  .panel .cont:hover{border-bottom-color:var(--door);}
   footer{padding:6vh 8vw; border-top:1px solid var(--hair); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-family:var(--mono); font-size:12px; color:var(--vellum-dim);}
   footer a{color:var(--vellum-dim); text-decoration:none;}
   footer a:hover{color:var(--vellum);}
@@ -116,7 +131,7 @@
     <a href="read-sample.html" class="active">Read a Sample</a>
     <a href="https://reviews.emotionallywhole.com/">Reviews</a>
     <div class="buy-menu">
-      <button type="button" class="buy-trigger" aria-haspopup="true" aria-expanded="false">Buy ▾</button>
+      <button type="button" id="buy" class="buy-trigger" aria-haspopup="true" aria-expanded="false">Buy ▾</button>
       <div class="buy-drop">
         <a href="https://www.amazon.com/dp/B0HDDK3DB3" target="_blank" rel="noopener">Amazon</a>
         <a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland Bookstore <span>Malaysia</span></a>
@@ -132,7 +147,7 @@
   <span class="eyebrow">A free reading sample</span>
   <h1>Emotionally Whole</h1>
   <div class="subtitle">From the Mirror to the Door</div>
-  <p class="note">The Foreword, the Prologue, the Introduction, and the opening of Chapter&nbsp;1 — free to read before you decide.</p>
+  <p class="note">The Foreword, the Prologue, the Introduction, the opening of Chapter&nbsp;1, and a moment from every chapter — free to read before you decide.</p>
 </header>
 
 <main class="reader">
@@ -299,13 +314,87 @@
   <p>The gap between "he shall surely die" and "you are the man" is the gap in which true self-awareness finally arrives: sudden, total, irreversible. The mirror is held up. The gap closes. In a single shattering instant of recognition, the distance between self-image and reality collapses, and the collapse is complete before David has had time to prepare a defence against it.</p>
   <p>David's response is immediate and undefended: "I have sinned against the Lord" (2 Sam 12:13).</p>
 
-  <div class="paywall">
-    <span class="eyebrow">Enjoying this sample?</span>
-    <h3>Keep reading the whole book</h3>
-    <p>The sample ends here. Chapter&nbsp;1 continues through David's restoration and Peter's courtyard — and four more rooms follow.</p>
-    <div class="cta-row">
-      <a class="btn solid" href="https://www.amazon.com/dp/B0HDDK3DB3" target="_blank" rel="noopener">Buy on Amazon</a>
-      <a class="btn ghost" href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Buy at Canaanland (Malaysia)</a>
+  <hr>
+
+  <div class="part">From the Chapters</div>
+  <h2 class="tight">Five rooms, five thresholds</h2>
+  <p style="text-align:center;color:var(--vellum-dim);font-size:17px;margin-bottom:40px;">A moment from each chapter — each one stops where the story turns.</p>
+
+  <div class="excerpts">
+    <input type="radio" name="ex" id="ex1" checked>
+    <input type="radio" name="ex" id="ex2">
+    <input type="radio" name="ex" id="ex3">
+    <input type="radio" name="ex" id="ex4">
+    <input type="radio" name="ex" id="ex5">
+    <div class="tabbar" role="tablist">
+      <label for="ex1"><b>01</b>Self-Awareness</label>
+      <label for="ex2"><b>02</b>Self-Regulation</label>
+      <label for="ex3"><b>03</b>Motivation</label>
+      <label for="ex4"><b>04</b>Empathy</label>
+      <label for="ex5"><b>05</b>Social Skills</label>
+    </div>
+    <div class="panels">
+    <article class="panel p1">
+      <div class="part" style="margin-top:0">Chapter One · Self-Awareness</div>
+      <h3>Peter: The Man Who Met the Gaze</h3>
+      <p>On the night before the crucifixion, the gap between Peter's self-image and his actual emotional reality became visible in a single sentence.</p>
+      <p><span class="scripture" style="display:block">"Even if all are made to stumble, yet I will not be" (Mark 14:29).</span></p>
+      <p>Peter means every word. He is entirely sincere, and entirely wrong about himself. He believes his commitment is more durable than the others'. He believes he knows what he's capable of under pressure. The night will show him something his self-image hadn't yet made room for.</p>
+      <p>Jesus tells him quietly what the night will bring: before the rooster crows twice, Peter will have disowned him three times (Mark 14:30). Peter's response is emphatic: "If I have to die with You, I will not deny You!" (Mark 14:31). He believes it.</p>
+      <p class="gap">· · ·</p>
+      <p>The arrest. The high priest's courtyard. The fire.</p>
+      <p>Peter follows at a distance: close enough to see, far enough to be safe, a compromise that will define the next few hours. He warms himself among the servants and guards. Three times, in the space of a single night, he denies knowing Jesus. The escalation rewards attention: first a simple denial to a servant girl, then a second to a bystander, then a sworn and emphatic repudiation. "I do not know this Man of whom you speak!" (Mark 14:71).</p>
+      <p>At that moment, the rooster crows.</p>
+      <p>Luke's account adds a detail the other Gospels don't carry. One sentence, understated in a way that makes it more devastating: "And the Lord turned and looked at Peter" (Luke 22:61).</p>
+      <p>In the middle of everything happening to Jesus — the trial underway, the violence already starting, the whole apparatus of the night in motion — he turns, across the courtyard, through the firelight, and looks at Peter.</p>
+      <a class="cont" href="#buy" data-open-buy>Continue reading in the book →</a>
+    </article>
+    <article class="panel p2">
+      <div class="part" style="margin-top:0">Chapter Two · Self-Regulation</div>
+      <h3>Joseph: The Long Obedience</h3>
+      <p>The day comes when no one else is in the house. She catches him by his garment: "Lie with me." He leaves the garment in her hand and runs. She keeps it until Potiphar comes home, then tells the household one version of the story and her husband the same lie in the same words (Gen 39:11–18). Joseph isn't present for either telling. The evidence is real. The story built from it isn't.</p>
+      <p>The accusation comes anyway, and the imprisonment follows it — the furnace intensifying around a man who did nothing to deserve the heat.</p>
+      <p>Prison is the part of Joseph's story that cannot be made romantic. He has maintained integrity and it has cost him everything visible. The cupbearer he helped has forgotten him (Gen 40:23). Two full years pass before anything changes (Gen 41:1). There's no recorded crisis of faith in Joseph during this period, no psalm of lament, no dramatic confrontation with God.</p>
+      <p>From the inside of that prison — without the narrator's view, without Genesis 50:20 as a promise, without any visible indication that the furnace had a purpose beyond itself — the long obedience would have looked like what it felt like: sustained faithfulness in a situation that had stopped rewarding it. The self-regulation that produced trustworthiness in Potiphar's household was now producing nothing visible. Joseph stayed.</p>
+      <p class="gap">· · ·</p>
+      <p>Years later, Joseph's brothers arrive in Egypt during the famine. He recognises them. They don't recognise him.</p>
+      <a class="cont" href="#buy" data-open-buy>Continue reading in the book →</a>
+    </article>
+    <article class="panel p3">
+      <div class="part" style="margin-top:0">Chapter Three · Motivation</div>
+      <h3>Nehemiah: The Weight that Became a Wall</h3>
+      <p>The man is Artaxerxes. The ask hasn't yet been made. The burden is being carried. Nehemiah is praying for the threshold moment he can see coming, the conversation in which four months of grief will have to become a request.</p>
+      <p class="gap">· · ·</p>
+      <p>When it finally arrives, it comes without warning.</p>
+      <p>The king notices that Nehemiah's countenance has changed. "Why is your face sad, since you are not sick?" Nehemiah records, with honesty, that he was "dreadfully afraid." (Neh 2:2). It's the portrait of a man who has been carrying a grief for four months, who stands at the threshold of the moment that grief has been building toward, and who's afraid of what he's about to ask.</p>
+      <p>He answers the king honestly: his city, the place of his fathers' tombs, lies in ruins. The king responds: "What do you request?" (Neh 2:4)</p>
+      <p>There is a striking detail in the gap between the question and the answer:</p>
+      <p><span class="scripture" style="display:block">"So I prayed to the God of heaven" (Neh 2:4).</span></p>
+      <p>One sentence. A breath of prayer in the gap between a king's question and a cupbearer's answer. There's no time for a lengthy prayer. No private chamber to retreat to. What Nehemiah does in this narrow space — between the question and the reply, under the gaze of the most powerful man in his world — is reach vertically, briefly, without performance, toward the God who has been sustaining that burden for four months.</p>
+      <p>It is the quiet turning point of the story.</p>
+      <a class="cont" href="#buy" data-open-buy>Continue reading in the book →</a>
+    </article>
+    <article class="panel p4">
+      <div class="part" style="margin-top:0">Chapter Four · Empathy</div>
+      <h3>Ruth: The Border Crosser</h3>
+      <p>Three women are standing on a road with nothing left between them but grief and a decision. Naomi kisses her daughters-in-law goodbye and tells them, plainly, why they should turn back: she has no more sons to give them, and even if she did, they couldn't wait the years it would take. All three lift up their voices and weep, not once, but twice in the space of a few verses (Ruth 1:9, 14). It isn't a quiet, composed farewell. It's loud, physical grief: three widows crying on an open road because none of them can see a way forward.</p>
+      <p>Orpah kisses Naomi goodbye and turns back toward Moab, toward her own mother's house, her own people, her own gods. It's a reasonable choice, made by a woman who has already given this family everything a daughter-in-law owes. Scripture doesn't condemn her for it. It simply records what she does next: nothing. She disappears from the story at the exact moment the story needed someone to stay.</p>
+      <p>A widow is being told to go home, back to safety, back to a family that might take her in — and she refuses.</p>
+      <p class="gap">· · ·</p>
+      <p>Naomi, watching everything, instructs Ruth in what to do next. Ruth is to go to the threshing floor where Boaz is winnowing barley: to approach him at night, after he has eaten and drunk and his heart is merry, to uncover his feet, lie down, and wait for him to speak.</p>
+      <p>She goes. She uncovers his feet and lies down in the darkness. At midnight Boaz wakes, finds her, and asks: "Who are you?" (Ruth 3:9).</p>
+      <a class="cont" href="#buy" data-open-buy>Continue reading in the book →</a>
+    </article>
+    <article class="panel p5">
+      <div class="part" style="margin-top:0">Chapter Five · Social Skills</div>
+      <h3>Daniel: Formed Before Babylon</h3>
+      <p>The officials who resent this find nothing actionable against him, "they could find no charge or fault, because he was faithful; nor was there any error or fault found in him" (Dan 6:4). With his professional record clean, they target his faith, constructing a law that will make his prayer practice illegal. Daniel's response is the defining portrait of principled composure:</p>
+      <p><span class="scripture" style="display:block">"Now when Daniel knew that the writing was signed, he went home. And in his upper room, with his windows open toward Jerusalem, he knelt down on his knees three times that day, and prayed and gave thanks before his God, as was his custom since early days" (Dan 6:10).</span></p>
+      <p>He continues doing what he's always done: praying toward Jerusalem, three times a day, as he has since before Babylon. The social intelligence here is a different kind, settled identity rather than strategic engagement. He remains himself in a situation designed to make self-abandonment the survival option.</p>
+      <p>Daniel is lowered into the den. A stone is rolled over the mouth of it, sealed with the king's own signet and the signets of his lords, so that nothing can be changed concerning him (Dan 6:17). Darius returns to his palace and fasts through the night. No music is brought before him. Sleep doesn't come (Dan 6:18).</p>
+      <p>At first light, the king who signed the law runs to the den himself and calls in with what the text describes as a lamentable voice: "Daniel, servant of the living God, has your God, whom you serve continually, been able to deliver you?" (Dan 6:20).</p>
+      <a class="cont" href="#buy" data-open-buy>Continue reading in the book →</a>
+    </article>
     </div>
   </div>
 
@@ -316,5 +405,14 @@
   <a href="index.html">Back to the book →</a>
 </footer>
 
+<script>
+document.querySelectorAll('[data-open-buy]').forEach(a=>a.addEventListener('click',e=>{
+  e.preventDefault();
+  const b=document.getElementById('buy');
+  b.focus({preventScroll:true});
+  b.setAttribute('aria-expanded','true');
+  b.addEventListener('blur',()=>b.setAttribute('aria-expanded','false'),{once:true});
+}));
+</script>
 </body>
 </html>
