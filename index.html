@@ -3,10 +3,30 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reader Reviews — Emotionally Whole | Winston H.K. Chew</title>
-<meta name="description" content="Read what readers are saying about Emotionally Whole by Winston H.K. Chew, and leave your own five-star rating and reflection.">
-<link rel="canonical" href="https://reviews.emotionallywhole.com/">
-<meta name="robots" content="index,follow">
+<title>Emotionally Whole: Emotional Intelligence Through Biblical Characters | Winston H.K. Chew</title>
+<meta name="description" content="Emotionally Whole by Winston H.K. Chew reads Daniel Goleman's five domains of emotional intelligence through biblical characters — David, Joseph, Nehemiah, Ruth, Daniel and more. A Christian guide to self-awareness, empathy and emotional health, with Scripture as the final authority.">
+<meta name="keywords" content="emotional intelligence Christian book, emotional intelligence for Christian leaders, biblical emotional intelligence, Goleman five domains Bible, Christian self-awareness, emotional health ministry, emotional maturity discipleship, spiritual formation, Christian leadership book Malaysia, David Joseph Nehemiah Ruth Daniel, Winston Chew">
+<meta name="author" content="Winston H.K. Chew">
+<link rel="canonical" href="https://emotionallywhole.com/">
+<meta property="og:title" content="Emotionally Whole — Emotional Intelligence Through Biblical Characters">
+<meta property="og:description" content="You already know the vocabulary of emotional health. This book is about the gap between knowing it and living it.">
+<meta property="og:image" content="https://emotionallywhole.com/images/cover.png">
+<meta property="og:url" content="https://emotionallywhole.com/">
+<meta property="og:type" content="book">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "Emotionally Whole: From the Mirror to the Door",
+  "author": { "@type": "Person", "name": "Winston H.K. Chew" },
+  "description": "Daniel Goleman's five domains of emotional intelligence read through biblical character studies, with Scripture as the final authority.",
+  "image": "https://emotionallywhole.com/images/cover.png",
+  "url": "https://emotionallywhole.com/",
+  "inLanguage": "en",
+  "genre": ["Christian Living", "Spiritual Formation", "Emotional Intelligence"]
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
@@ -14,177 +34,414 @@
     --ink:#15120F; --ink-2:#1C1815;
     --vellum:#E9E1CE; --vellum-dim:#B7AD95;
     --hair:rgba(233,225,206,0.14);
-    --door:#D8A94E; --gold:#D8A94E; --furnace:#C1502E;
+    --mirror:#93AAB3; --furnace:#C1502E; --ruins:#A8967A;
+    --crossing-a:#3A5468; --crossing-b:#C88A3E; --door:#D8A94E; --gold:#D8A94E;
     --display:'Fraunces', serif; --body:'Source Serif 4', serif; --mono:'JetBrains Mono', monospace;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
-  [hidden]{display:none !important;}
   html{scroll-behavior:smooth;}
   body{background:var(--ink); color:var(--vellum); font-family:var(--body); font-size:18px; line-height:1.7; -webkit-font-smoothing:antialiased;}
-  a{color:inherit;}
-  h1,h2,h3{font-family:var(--display); font-weight:500; letter-spacing:-0.01em;}
+  section{position:relative; padding:8vh 8vw;}
   .eyebrow{font-family:var(--mono); font-size:12px; letter-spacing:0.14em; text-transform:uppercase; color:var(--vellum-dim);}
+  h1,h2,h3{font-family:var(--display); font-weight:500; letter-spacing:-0.01em;}
+  a{color:inherit;}
+  .btn{font-family:var(--mono); font-size:13px; letter-spacing:0.06em; text-transform:uppercase; padding:16px 28px; border:1px solid var(--vellum); color:var(--vellum); text-decoration:none; transition:background .25s, color .25s, border-color .25s; display:inline-block; background:transparent; cursor:pointer;}
+  .btn.solid{background:var(--vellum); color:var(--ink);}
+  .btn.solid:hover{background:var(--door); border-color:var(--door);}
+  .btn.ghost:hover{background:rgba(233,225,206,0.08);}
 
-  .topnav{position:sticky; top:0; z-index:50; display:flex; align-items:center; justify-content:space-between; padding:16px 8vw; background:rgba(21,18,15,0.9); backdrop-filter:blur(10px); border-bottom:1px solid var(--hair);}
-  .topnav .brand{font-family:var(--display); font-size:20px; text-decoration:none; color:var(--vellum);}
+  .seminar-bar{
+    display:block; text-decoration:none;
+    background:rgba(216,169,78,0.10); border-bottom:1px solid var(--hair);
+    color:var(--vellum); font-family:var(--mono); font-size:13px; letter-spacing:0.03em;
+    text-align:center; padding:12px 20px; transition:background .2s;
+  }
+  .seminar-bar:hover{ background:rgba(216,169,78,0.18); }
+  .seminar-bar .sb-tag{ color:var(--gold); text-transform:uppercase; letter-spacing:.12em; font-size:11px; margin-right:10px; }
+  .seminar-bar .sb-note{ display:block; margin-top:6px; color:var(--vellum-dim); font-size:12px; letter-spacing:.01em; }
+  .seminar-bar .sb-note b{ color:var(--gold); font-weight:500; }
+  @media (max-width:520px){ .seminar-bar{ font-size:11.5px; padding:10px 14px; } .seminar-bar .sb-note{ font-size:11px; } }
+
+  .hero{min-height:100vh; display:grid; grid-template-columns:1.1fr 0.9fr; gap:6vw; align-items:center;
+    background:radial-gradient(60% 50% at 78% 20%, rgba(216,169,78,0.10), transparent 60%), var(--ink);
+    border-bottom:1px solid var(--hair);}
+  .hero h1{font-size:clamp(40px,6vw,84px); line-height:0.98; margin:24px 0 10px;}
+  .hero .subtitle{font-family:var(--display); font-weight:300; font-size:clamp(18px,2vw,26px); color:var(--door); margin-bottom:24px;}
+  .hero .sub{font-size:clamp(17px,1.5vw,21px); color:var(--vellum-dim); max-width:46ch; margin-bottom:40px;}
+  .cta-row{display:flex; gap:18px; align-items:center; flex-wrap:wrap;}
+  .cover-wrap{display:flex; justify-content:center;}
+  .cover-wrap img{width:min(380px,80%); height:auto; border:1px solid var(--hair); box-shadow:0 30px 80px rgba(0,0,0,0.6);}
+
+  .premise{max-width:820px; margin:0 auto; padding:14vh 8vw; border-bottom:1px solid var(--hair);}
+  .premise p{font-size:clamp(21px,2.4vw,30px); line-height:1.5;}
+  .premise p + p{margin-top:26px; color:var(--vellum-dim); font-size:19px;}
+
+  .room{min-height:80vh; display:flex; flex-direction:column; justify-content:center; border-bottom:1px solid var(--hair); overflow:hidden;}
+  .room-inner{max-width:760px; position:relative; z-index:2;}
+  .room .num{font-family:var(--mono); font-size:13px; color:var(--vellum-dim); letter-spacing:.1em; margin-bottom:16px; display:block;}
+  .room h2{font-size:clamp(36px,5.5vw,66px); margin-bottom:8px;}
+  .room .pairing{font-family:var(--mono); font-size:14px; letter-spacing:.04em; margin-bottom:24px; display:block;}
+  .room .desc{font-size:19px; color:var(--vellum-dim); max-width:54ch;}
+  .room .teaser{font-size:18px; color:var(--vellum-dim); max-width:56ch; margin-top:20px; line-height:1.65;}
+  .room .claim{font-family:var(--display); font-weight:500; font-size:clamp(20px,2.1vw,26px); line-height:1.4; max-width:46ch; margin-top:30px;}
+  .room .practice-tag{margin-top:26px; font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--vellum-dim);}
+  .room .practice-tag span{color:var(--vellum);}
+  .room .verse{margin-top:22px; font-family:var(--mono); font-size:13px; color:var(--vellum-dim); border-left:1px solid var(--hair); padding-left:16px;}
+  #mirror{background:radial-gradient(38% 60% at 82% 50%, rgba(147,170,179,0.18), transparent 65%), var(--ink-2);}
+  #mirror .pairing{color:var(--mirror);}
+  #furnace{background:radial-gradient(70% 55% at 50% 115%, rgba(193,80,46,0.26), transparent 65%), var(--ink);}
+  #furnace .pairing{color:var(--furnace);}
+  #ruins{background:var(--ink-2); background-image:repeating-linear-gradient(115deg, rgba(168,150,122,0.06) 0 1px, transparent 1px 64px);}
+  #ruins .pairing{color:var(--ruins);}
+  #crossing{background:linear-gradient(100deg, var(--crossing-a) 0%, var(--ink) 42%, var(--ink) 58%, var(--crossing-b) 100%);}
+  #crossing .pairing{color:#E4C48A;}
+  #door{background:radial-gradient(24% 70% at 50% 50%, rgba(216,169,78,0.28), transparent 70%), var(--ink);}
+  #door .pairing{color:var(--door);}
+  #door .room-inner{text-align:center; margin:0 auto;}
+  #door .desc, #door .teaser, #door .claim{margin-left:auto; margin-right:auto;}
+
+  .excerpt{max-width:760px; margin:0 auto; padding:14vh 8vw; border-bottom:1px solid var(--hair);}
+  .excerpt .eyebrow{margin-bottom:34px;}
+  .excerpt p{font-size:19px; margin-bottom:22px;}
+  .excerpt .closing{font-family:var(--display); font-size:clamp(21px,2.4vw,28px); line-height:1.5; color:var(--door); margin-top:34px;}
+
+  .endorse{padding:12vh 8vw; border-bottom:1px solid var(--hair);}
+  .endorse .eyebrow{margin-bottom:40px;}
+  .quote-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--hair);}
+  .quote{background:var(--ink); padding:36px 30px; display:flex; flex-direction:column; justify-content:space-between;}
+  .quote p{font-size:17px; line-height:1.65; font-style:italic;}
+  .quote .who{margin-top:22px; font-family:var(--mono); font-size:12px; color:var(--vellum-dim); font-style:normal; line-height:1.6;}
+
+  .author{padding:12vh 8vw; border-bottom:1px solid var(--hair); display:grid; grid-template-columns:0.8fr 1.4fr; gap:60px; align-items:center;}
+  .author img{width:100%; max-width:340px; border:1px solid var(--hair);}
+  .author h2{font-size:clamp(28px,3.4vw,40px); margin-bottom:20px;}
+  .author p{font-size:18px; color:var(--vellum-dim); max-width:60ch;}
+  .author p + p{margin-top:16px;}
+
+  .contact{padding:12vh 8vw; border-bottom:1px solid var(--hair); text-align:center; max-width:640px; margin:0 auto;}
+  .contact h2{font-size:clamp(24px,2.8vw,32px); margin-bottom:16px;}
+  .contact p{color:var(--vellum-dim); font-size:18px; margin-bottom:28px;}
+  .contact a.mail{font-family:var(--mono); font-size:15px; letter-spacing:.03em; color:var(--door); text-decoration:none; border-bottom:1px solid rgba(216,169,78,0.4); padding-bottom:3px;}
+  .contact a.mail:hover{border-bottom-color:var(--door);}
+
+  .buy{padding:16vh 8vw; text-align:center; background:radial-gradient(50% 60% at 50% 50%, rgba(216,169,78,0.12), transparent 70%);}
+  .buy h2{font-size:clamp(30px,4.6vw,52px); max-width:18ch; margin:0 auto 30px;}
+  .buy .cta-row{justify-content:center;}
+  .stores{
+    max-width:420px; margin:44px auto 0; padding:26px 30px;
+    border:1px solid var(--hair); border-radius:2px;
+    background:rgba(233,225,206,0.03);
+  }
+  .stores-label{
+    display:block; font-family:var(--mono); font-size:11px; letter-spacing:.14em;
+    text-transform:uppercase; color:var(--gold); margin-bottom:14px;
+  }
+  .stores-list{list-style:none; margin:0; padding:0;}
+  .stores-list li{
+    font-family:var(--display); font-weight:500; font-size:20px; color:var(--vellum);
+    padding:8px 0; border-top:1px solid var(--hair);
+  }
+  .stores-list li:first-child{border-top:none;}
+  .stores-list li a{color:var(--vellum); text-decoration:none; border-bottom:1px solid var(--door); transition:color .2s;}
+  .stores-list li a:hover{color:var(--door);}
+  footer{padding:6vh 8vw; border-top:1px solid var(--hair); display:flex; justify-content:space-between; flex-wrap:wrap; gap:12px; font-family:var(--mono); font-size:12px; color:var(--vellum-dim);}
+  footer a{color:var(--vellum-dim); text-decoration:none;}
+  footer a:hover{color:var(--vellum);}
+
+  .fade{opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s ease;}
+  .fade.in{opacity:1; transform:translateY(0);}
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr; padding-top:12vh;}
+    .cover-wrap{order:-1;}
+    .quote-grid{grid-template-columns:1fr;}
+    .author{grid-template-columns:1fr;}
+  }
+  @media (prefers-reduced-motion: reduce){ .fade{opacity:1; transform:none; transition:none;} }
+
+  .topnav{
+    position:sticky; top:0; z-index:50;
+    display:flex; align-items:center; justify-content:space-between; gap:16px;
+    padding:14px 8vw; background:rgba(21,18,15,0.92); backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--hair);
+  }
+  .topnav .brand{font-family:var(--display); font-weight:500; font-size:16px; color:var(--vellum); text-decoration:none; letter-spacing:-0.01em;}
   .topnav .links{display:flex; gap:22px; align-items:center;}
-  .topnav .links a{font-family:var(--mono); font-size:12px; letter-spacing:0.06em; text-transform:uppercase; color:var(--vellum-dim); text-decoration:none; transition:color .2s;}
+  .topnav .links a{font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--vellum-dim); text-decoration:none; transition:color .2s;}
   .topnav .links a:hover, .topnav .links a.active{color:var(--gold);}
   .buy-menu{position:relative;}
-  .buy-trigger{font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--vellum-dim); background:transparent; border:none; cursor:pointer; padding:0; transition:color .2s;}
+  .buy-trigger{
+    font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--vellum-dim); background:transparent; border:none; cursor:pointer; padding:0; transition:color .2s;
+  }
   .buy-menu:hover .buy-trigger, .buy-trigger:focus-visible{color:var(--gold);}
-  .buy-drop{position:absolute; top:calc(100% + 12px); right:0; min-width:190px; background:rgba(21,18,15,0.98); border:1px solid var(--hair); border-radius:2px; padding:6px; display:none; flex-direction:column; box-shadow:0 20px 50px rgba(0,0,0,0.5); z-index:60;}
+  .buy-drop{
+    position:absolute; top:calc(100% + 12px); right:0; min-width:190px;
+    background:rgba(21,18,15,0.98); border:1px solid var(--hair); border-radius:2px;
+    padding:6px; display:none; flex-direction:column; box-shadow:0 20px 50px rgba(0,0,0,0.5); z-index:60;
+  }
   .buy-menu:hover .buy-drop, .buy-menu:focus-within .buy-drop{display:flex;}
-  .buy-drop a{font-family:var(--mono); font-size:12px; letter-spacing:.04em; text-transform:none; color:var(--vellum); text-decoration:none; padding:10px 14px; border-radius:2px; transition:background .18s, color .18s; display:flex; justify-content:space-between; align-items:baseline; gap:12px;}
+  .buy-drop a{
+    font-family:var(--mono); font-size:12px; letter-spacing:.04em; text-transform:none;
+    color:var(--vellum); text-decoration:none; padding:10px 14px; border-radius:2px; transition:background .18s, color .18s;
+    display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+  }
   .buy-drop a:hover{background:rgba(216,169,78,0.14); color:var(--gold);}
   .buy-drop a span{font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--vellum-dim);}
+  @media (max-width:600px){
+    .topnav{padding:12px 20px; flex-direction:column; gap:8px;}
+    .topnav .links{gap:16px;}
+    .topnav .links a{font-size:11px;}
+  }
 
-  .wrap{max-width:820px; margin:0 auto; padding:9vh 6vw 14vh;}
-  .head{text-align:center; margin-bottom:8vh;}
-  .head h1{font-size:clamp(38px,6vw,64px); line-height:1.02; margin:14px 0 18px;}
-  .head p{color:var(--vellum-dim); max-width:52ch; margin:0 auto;}
-  .summary{display:flex; align-items:center; justify-content:center; gap:18px; margin:30px 0 0; flex-wrap:wrap;}
-  .summary .avg{font-family:var(--display); font-size:44px; line-height:1; color:var(--door);}
-  .summary .stars{font-size:22px; letter-spacing:2px; color:var(--door);}
-  .summary .count{font-family:var(--mono); font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--vellum-dim);}
-
-  .form-card{background:var(--ink-2); border:1px solid var(--hair); border-radius:3px; padding:34px clamp(20px,4vw,40px); margin-bottom:9vh;}
-  .form-card h2{font-size:26px; margin-bottom:6px;}
-  .form-card .lede{color:var(--vellum-dim); font-size:15px; margin-bottom:26px;}
-  .field{margin-bottom:22px;}
-  .field label{display:block; font-family:var(--mono); font-size:11px; letter-spacing:.1em; text-transform:uppercase; color:var(--vellum-dim); margin-bottom:9px;}
-  .field input, .field textarea{width:100%; background:rgba(233,225,206,0.04); border:1px solid var(--hair); border-radius:2px; color:var(--vellum); font-family:var(--body); font-size:17px; padding:13px 15px; transition:border-color .2s;}
-  .field input:focus, .field textarea:focus{outline:none; border-color:var(--door);}
-  .field textarea{min-height:130px; resize:vertical; line-height:1.6;}
-  .starpick{display:flex; gap:6px;}
-  .starpick button{background:none; border:none; cursor:pointer; font-size:34px; line-height:1; color:var(--hair); padding:0; transition:color .12s, transform .12s;}
-  .starpick button:hover{transform:translateY(-2px);}
-  .starpick button.on{color:var(--door);}
-  .submit-row{display:flex; align-items:center; gap:18px; flex-wrap:wrap;}
-  .note{color:var(--vellum-dim); font-size:13px; margin-top:16px;}
-  .btn{font-family:var(--mono); font-size:13px; letter-spacing:0.06em; text-transform:uppercase; padding:15px 30px; border:1px solid var(--vellum); color:var(--ink); background:var(--vellum); text-decoration:none; cursor:pointer; border-radius:2px; transition:background .25s, border-color .25s;}
-  .btn:hover{background:var(--door); border-color:var(--door);}
-  .btn[disabled]{opacity:.5; cursor:default;}
-  .msg{font-family:var(--mono); font-size:12px; letter-spacing:.04em;}
-  .msg.err{color:var(--furnace);} .msg.ok{color:var(--door);}
-
-  .list-head{display:flex; align-items:baseline; justify-content:space-between; border-bottom:1px solid var(--hair); padding-bottom:14px; margin-bottom:30px;}
-  .list-head h2{font-size:24px;}
-  .review{padding:26px 0; border-bottom:1px solid var(--hair);}
-  .review:last-child{border-bottom:none;}
-  .review .top{display:flex; align-items:baseline; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:10px;}
-  .review .name{font-family:var(--display); font-size:20px; color:var(--vellum);}
-  .review .rstars{color:var(--door); letter-spacing:2px; font-size:15px;}
-  .review .date{font-family:var(--mono); font-size:11px; letter-spacing:.06em; color:var(--vellum-dim);}
-  .review .text{color:var(--vellum); font-size:17px; text-wrap:pretty;}
-  .empty{color:var(--vellum-dim); font-style:italic; padding:20px 0;}
-  @media (max-width:600px){ .topnav{padding:12px 18px; flex-direction:column; gap:8px;} .topnav .links{flex-wrap:wrap; justify-content:center; gap:14px;} }
+  /* ---- Read-sample invitation ---- */
+  .sample-cta{
+    max-width:960px; margin:0 auto; padding:14vh 8vw; border-bottom:1px solid var(--hair);
+    display:grid; grid-template-columns:1.3fr 0.9fr; gap:6vw; align-items:center;
+  }
+  .sample-cta .eyebrow{margin-bottom:18px;}
+  .sample-cta h2{font-size:clamp(30px,4vw,50px); line-height:1.02; margin-bottom:20px;}
+  .sample-cta p{font-size:19px; color:var(--vellum-dim); max-width:48ch; margin-bottom:32px;}
+  .sample-cta .btn{font-family:var(--mono); font-size:13px; letter-spacing:0.06em; text-transform:uppercase; padding:16px 28px; border:1px solid var(--vellum); color:var(--vellum); text-decoration:none; transition:background .25s,color .25s,border-color .25s; display:inline-block;}
+  .sample-cta .btn:hover{background:var(--door); border-color:var(--door); color:var(--ink);}
+  .sample-toc{
+    border:1px solid var(--hair); border-radius:2px; padding:30px 30px;
+    background:rgba(233,225,206,0.03);
+  }
+  .sample-toc .toc-label{font-family:var(--mono); font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--gold); margin-bottom:16px; display:block;}
+  .sample-toc ul{list-style:none; margin:0; padding:0;}
+  .sample-toc li{
+    font-family:var(--display); font-weight:500; font-size:18px; color:var(--vellum);
+    padding:11px 0; border-top:1px solid var(--hair); display:flex; justify-content:space-between; gap:14px; align-items:baseline;
+  }
+  .sample-toc li:first-child{border-top:none;}
+  .sample-toc li span{font-family:var(--mono); font-size:11px; color:var(--vellum-dim); letter-spacing:.04em; white-space:nowrap;}
+  @media (max-width:860px){ .sample-cta{grid-template-columns:1fr; gap:40px;} }
 </style>
 </head>
 <body>
 
 <nav class="topnav">
-  <a class="brand" href="https://emotionallywhole.com/">Emotionally Whole</a>
+  <a class="brand" href="index.html">Emotionally Whole</a>
   <div class="links">
-    <a href="https://emotionallywhole.com/">The Book</a>
-    <a href="https://emotionallywhole.com/emotional-intelligence-christian-leaders.html">Guide for Leaders</a>
-    <a href="https://emotionallywhole.com/blog.html">Reflections</a>
-    <a href="https://emotionallywhole.com/seminar.html">Seminar</a>
-    <a href="https://emotionallywhole.com/read-sample.html">Read a Sample</a>
-    <a href="https://reviews.emotionallywhole.com/" class="active">Reviews</a>
+    <a href="index.html" class="active">The Book</a>
+    <a href="emotional-intelligence-christian-leaders.html">Guide for Leaders</a>
+    <a href="blog.html">Reflections</a>
+    <a href="seminar.html">Seminar</a>
+    <a href="read-sample.html">Read a Sample</a>
+    <a href="https://reviews.emotionallywhole.com/">Reviews</a>
     <div class="buy-menu">
       <button type="button" class="buy-trigger" aria-haspopup="true" aria-expanded="false">Buy ▾</button>
       <div class="buy-drop">
         <a href="https://www.amazon.com/dp/B0HDDK3DB3" target="_blank" rel="noopener">Amazon</a>
         <a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland Bookstore <span>Malaysia</span></a>
         <a href="https://methodistbookroom.com/emotionally-whole" target="_blank" rel="noopener">Methodist Book Room</a>
-        <a href="https://www.gladsounds.com.my/products/emotionally-wholezo-from-the-mirror-to-the-door/120689/" target="_blank" rel="noopener">Glad Sounds Bookstore</a>
-        <a href="https://www.preciouspages.com.my/pd-emotionally-whole-from-the-mirror-to-the-door.cfm" target="_blank" rel="noopener">Precious Pages Resources</a>
+        <div style="font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--vellum);padding:10px 14px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;">Glad Sounds Bookstore <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--vellum-dim);">In store</span></div>
+        <div style="font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--vellum);padding:10px 14px;display:flex;justify-content:space-between;align-items:baseline;gap:12px;">Precious Pages Resources <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--vellum-dim);">In store</span></div>
       </div>
     </div>
   </div>
 </nav>
 
-<div class="wrap">
-  <div class="list-head">
-    <h2>EW Masterclass Participant Reviews</h2>
-    <span class="count" id="mcCount" style="font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--vellum-dim);"></span>
-  </div>
-  <div id="mcList"><p class="empty">Loading reviews…</p></div>
+<a class="seminar-bar" href="seminar.html">
+  <span class="sb-tag">Upcoming</span>
+  Half-day teach-in with Winston Chew · Mon 19 Oct 2026 — register free →
+  <span class="sb-note">With warm thanks to those who serve: <b>every fellow minister who registers will receive a signed copy of the book — a complimentary gift from the author.</b></span>
+</a>
 
-  <div class="list-head" style="margin-top:9vh;">
-    <h2>Reflections from readers</h2>
+<section class="hero">
+  <div>
+    <span class="eyebrow">Emotional intelligence through biblical characters &mdash; a book by Winston H.K. Chew</span>
+    <h1>Emotionally Whole</h1>
+    <div class="subtitle">From the Mirror to the Door</div>
+    <p class="sub">You already know the vocabulary of emotional health. This book is about the gap between knowing it and living it.</p>
+    <div class="cta-row">
+      <a href="https://www.amazon.com/dp/B0HDDK3DB3" class="btn solid" target="_blank" rel="noopener">Buy on Amazon</a>
+      <a href="#rooms" class="btn ghost">Walk through the five rooms ↓</a>
+    </div>
   </div>
-  <div id="reviewList"><p class="empty">Loading reviews…</p></div>
+  <div class="cover-wrap">
+    <img src="images/cover.png" alt="Emotionally Whole book cover — a heavy wooden door with warm light breaking through its frame, above a darkened city at dusk">
+  </div>
+
+  <div class="stores">
+    <span class="stores-label">Also available in Malaysia at</span>
+    <ul class="stores-list">
+      <li><a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland Bookstore</a></li>
+      <li><a href="https://methodistbookroom.com/emotionally-whole" target="_blank" rel="noopener">Methodist Book Room</a></li>
+      <li>Glad Sounds Bookstore</li>
+      <li>Precious Pages Resources</li>
+   </ul>
+  </div>
+</section>
+  <section class="premise fade">
+  <p>Five domains of emotional intelligence. Five images. Five biblical figures who were formed — slowly, and at real cost — into people who could carry what they were given.</p>
+  <p>Daniel Goleman supplies the lens. Scripture holds the authority. Each chapter closes with five Reflection Questions and a guided Soul Practice, built to move the chapter out of your head and into an ordinary week.</p>
+</section>
+
+<div id="rooms">
+<section class="room fade" id="mirror">
+  <div class="room-inner">
+    <span class="num">01 — Self-awareness</span>
+    <h2>The Mirror</h2>
+    <span class="pairing">David &amp; Peter</span>
+    <p class="desc">Two men fluent enough with God — David in the Psalms, Peter in his bold declarations of love — who stayed blind to what they were becoming with everyone else.</p>
+    <p class="teaser">Both were expressive. Both were sincere. And both discovered that emotional fluency and self-awareness are not the same thing — that you can pour out your heart to God for years and still not see the version of yourself that exists in your absence. Neither man closed the gap alone. It took Nathan's parable, and a look across a courtyard, to hold up the mirror.</p>
+    <p class="claim">The most accurate mirror is almost never the one you hold yourself.</p>
+    <div class="practice-tag">Soul Practice — <span>Mirror and Mercy</span></div>
+    <div class="verse">2 SAM 12:7 — "YOU ARE THE MAN"</div>
+  </div>
+</section>
+<section class="room fade" id="furnace">
+  <div class="room-inner">
+    <span class="num">02 — Self-regulation</span>
+    <h2>The Furnace</h2>
+    <span class="pairing">Joseph &amp; Paul</span>
+    <p class="desc">What it costs to keep your integrity through years nobody is watching, and what it means to keep praying when the thorn is never removed.</p>
+    <p class="teaser">Self-regulation is usually sold as a skill you build. Joseph and Paul suggest something harder: that it is a character forged in conditions you would never have chosen — a pit, a prison, an affliction that stays. Joseph's furnace was injustice sustained over years; Paul's was a limitation God declined to lift. Neither was removed from the fire. Both were changed inside it.</p>
+    <p class="claim">Composure under pressure is not control. It is what remains after the fire has done its work.</p>
+    <div class="practice-tag">Soul Practice — <span>The Threshold</span></div>
+    <div class="verse">2 COR 12:9 — "MY GRACE IS SUFFICIENT FOR YOU"</div>
+  </div>
+</section>
+<section class="room fade" id="ruins">
+  <div class="room-inner">
+    <span class="num">03 — Motivation</span>
+    <h2>The Ruins</h2>
+    <span class="pairing">Nehemiah &amp; Barnabas</span>
+    <p class="desc">What keeps a person moving once the excitement is gone — and why the answer isn't more passion, but a grief that won't let you put it down.</p>
+    <p class="teaser">Motivation is usually mistaken for enthusiasm — the surge that fades exactly when the work gets hard. Nehemiah's began somewhere else entirely: he heard the walls of a city he had never lived in were broken, and he sat down and wept, months before he lifted a single stone. Durable motivation, it turns out, is often grief that refuses to leave — the specific brokenness you cannot walk past. Barnabas shows the same instinct turned toward a person everyone else had written off.</p>
+    <p class="claim">The call was always hidden inside the burden you couldn't put down.</p>
+    <div class="practice-tag">Soul Practice — <span>The Night Survey</span></div>
+    <div class="verse">NEH 1:4 — "I SAT DOWN AND WEPT"</div>
+  </div>
+</section>
+<section class="room fade" id="crossing">
+  <div class="room-inner">
+    <span class="num">04 — Empathy</span>
+    <h2>The Border Crossing</h2>
+    <span class="pairing">Ruth &amp; Jesus</span>
+    <p class="desc">What it costs to keep crossing into other people's pain, and where you go once you're the one running on empty.</p>
+    <p class="teaser">Empathy is the one domain that depletes precisely under the conditions it is needed most — sustained, costly, unreciprocated presence with someone else's suffering. The most faithful carers are often the most exhausted ones. Ruth crossed every border she had — nation, family, security — to stay with a grieving woman who had nothing to offer her. And she could do it, this chapter argues, because she had first been crossed toward herself.</p>
+    <p class="claim">Empathy is received before it is given. You cannot pour from a well no one has filled.</p>
+    <div class="practice-tag">Soul Practice — <span>The Threshing Floor</span></div>
+    <div class="verse">RUTH 1:16 — "WHEREVER YOU GO, I WILL GO"</div>
+  </div>
+</section>
+<section class="room fade" id="door">
+  <div class="room-inner">
+    <span class="num">05 — Social skills</span>
+    <h2>The Door</h2>
+    <span class="pairing">Daniel, Lydia &amp; Priscilla</span>
+    <p class="desc">Influence that doesn't wait for a title, formed in three people who had no institutional power to speak of.</p>
+    <p class="teaser">Social skill is easy to counterfeit — charm, technique, the right words in the right room. This chapter is about the harder kind: influence that flows from formed character rather than position, and cannot be performed. A captive in a foreign court. A businesswoman whose home became a church. A woman who corrected a gifted preacher so carefully that his ministry grew. None of them held authority. Each of them opened a door the structure had not yet authorised.</p>
+    <p class="claim">The door was already theirs to open. What God had formed in them let them walk through it.</p>
+    <div class="practice-tag">Soul Practice — <span>The Open Door</span></div>
+    <div class="verse">ACTS 16:14 — "THE LORD OPENED HER HEART"</div>
+  </div>
+</section>
 </div>
 
-<script>
-const $ = s => document.querySelector(s);
-const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-const stars = n => "★★★★★".slice(0,n) + "☆☆☆☆☆".slice(0,5-n);
-const fmtDate = d => { const t = new Date(d); return isNaN(t) ? "" : t.toLocaleDateString(undefined,{year:'numeric',month:'short',day:'numeric'}); };
+<section class="sample-cta fade" id="sample">
+  <div>
+    <span class="eyebrow">Read before you decide</span>
+    <h2>Start reading — the first pages are free</h2>
+    <p>The Foreword, the full Prologue, the Introduction, and the opening of Chapter&nbsp;1: Self-Awareness — from the two hospital rooms that shaped the author to David standing before Nathan's mirror.</p>
+    <a class="btn" href="read-sample.html">Read the sample →</a>
+  </div>
+  <aside class="sample-toc">
+    <span class="toc-label">In this sample</span>
+    <ul>
+      <li>Foreword <span>Thomas Chin</span></li>
+      <li>Prologue: Two Rooms <span>Father &amp; Mother</span></li>
+      <li>Introduction <span>Hannah at Shiloh</span></li>
+      <li>Chapter 1: The Mirror <span>David &amp; Peter</span></li>
+    </ul>
+  </aside>
+</section>
 
-/* masterclass reviews from masterclass-reviews.json */
-async function loadMC(){
-  const list = $("#mcList");
-  let items = [];
-  try{
-    const res = await fetch("masterclass-reviews.json?v=" + Date.now());
-    if(res.ok){ const d = await res.json(); items = Array.isArray(d) ? d : (d.reviews || []); }
-  }catch(err){}
-  if(!items.length){ list.innerHTML = '<p class="empty">Participant reviews will appear here after the next Masterclass.</p>'; return; }
-  const avg = items.reduce((s,r)=>s+(+r.rating||0),0)/items.length;
-  $("#mcCount").textContent = items.length + (items.length===1?" review":" reviews");
-  items.sort((a,b)=> new Date(b.date) - new Date(a.date));
-  list.innerHTML = items.map(r => `
-    <div class="review">
-      <div class="top">
-        <div><span class="name">${esc(r.name)}</span>${r.event?`<div class="date" style="margin-top:4px;">${esc(r.event)}</div>`:''}</div>
-        <div style="text-align:right">
-          <div class="date">${fmtDate(r.date)}</div>
-        </div>
-      </div>
-      <div class="text">${esc(r.text)}</div>
-    </div>`).join("");
-}
+<section class="excerpt fade">
+  <span class="eyebrow">From the Conclusion — the Hannah close</span>
+  <p>We began with a woman at a temple.</p>
+  <p>A woman who knew exactly what she was carrying — and said so. She came to Shiloh in bitterness of soul, year after year, and brought the full weight of her interior life into her encounter with God with the composure of someone who had stopped curating it — present, honest, with the weight fully placed. She prayed with only her lips moving. She wept. And when the priest misread her grief as drunkenness, she named what was true — with precision, without performance, without apology — and placed it before the God she came to find.</p>
+  <p>She left the temple with her face no longer sad. Her circumstances remained as they were. The change was interior.</p>
+  <p class="closing">Go back to Shiloh. Bring what you're carrying. Say what is true — with precision, without performance, without apology. Leave with your face no longer sad. Because you’ve been faithfully present, and the God who bent to hear Hannah is, after all that has unfolded, remains attentive.</p>
+</section>
 
-/* render published reviews from reviews.json (curated by the author) */
-async function load(){
-  const list = $("#reviewList");
-  try{
-    const res = await fetch("reviews.json?v=" + Date.now());
-    if(!res.ok) throw new Error();
-    const reviews = await res.json();
-    render(Array.isArray(reviews) ? reviews : (reviews.reviews || []));
-  }catch(err){
-    list.innerHTML = '<p class="empty">No reviews yet — yours could be the first.</p>';
-    }
-}
+<section class="endorse fade">
+  <span class="eyebrow">Endorsed by</span>
+  <div class="quote-grid">
+    <div class="quote">
+      <p>"Emotionally Whole by Winston Chew is a well-written and very helpful book (including Soul Practices) on the integration of Daniel Goleman's Emotional Intelligence (including appropriate critique) with biblical truth, using biblical characters … Highly recommended!"</p>
+      <span class="who">Rev. Dr. Siang-Yang Tan — Senior Professor of Clinical Psychology, Fuller Theological Seminary; Senior Pastor Emeritus, First Evangelical Church Glendale; author of Counseling and Psychotherapy: A Christian Perspective</span>
+    </div>
+    <div class="quote">
+      <p>"Leadership today is often defined by what we do and how we leverage our surroundings. Emotionally Whole looks deeper: at how God forms and reforms the person He uses, in a real and broken world. Informative, inspiring, and grounded in Scripture. I fully recommend it to anyone who wants a meaningful, fruitful ministry."</p>
+      <span class="who">Rev. Ong Sek Leang — General Superintendent, Assemblies of God Malaysia</span>
+    </div>
+    <div class="quote">
+      <p>"This work is a rare achievement…This book understands something essential about the Old Testament: that God's redemptive work unfolds through wounded and vulnerable people healed by divine grace. Emotionally Whole is not merely a book about psychology and emotion. It is a theological reflection on what it means to be fully healed by God."</p>
+      <span class="who">Rev. Dr. Elaine Goh — Dean of Postgraduate Studies and faculty in Old Testament Studies, Seminari Theoloji Malaysia</span>
+    </div>
+    <div class="quote">
+      <p>"What makes it distinctive is its refusal to present the heroes of Scripture as flawless examples. Their failures become the precise sites where grace does its deepest work, and what God forms in a person before the test determines what they carry into it. This is not merely a book to be read. It is a book to be experienced. Emotional maturity is not an optional addition to the Christian life; it is an expression of spiritual formation itself."</p>
+      <span class="who">Dato' Peter Ng — Executive Chairman and Founder, UCSI Group</span>
+    </div>
+    <div class="quote">
+      <p>"Many Christian leaders are gifted in ministry yet struggle with emotional health. Emotionally Whole demonstrates that emotional maturity is not a secular ideal but essential to Christlike discipleship, written for those who do God's work, and desire to become the people through whom God can work."</p>
+      <span class="who">Rev. Dr. Victor Lee — President, Bible College of Malaysia</span>
+    </div>
+    <div class="quote">
+      <p>"It was Socrates who said 'the unexamined life is not worth living'. Emotionally Whole helps in that process by giving voice and handle towards the well-being of one's soul and recovering what may have been lost in one's life. Highly recommended for all in the ministry of the Kingdom of God."</p>
+      <span class="who">Rev. Dr. Herbert Tan — National Director, Family Ministries Malaysia; Founding Director of the D6 Family Ministry Movement in Malaysia</span>
+    </div>
+    <div class="quote">
+      <p>"Since founding Teamcoach International in 1999, I've seen one truth again and again: leadership flourishes through the conversations leaders shape. Emotionally Whole expresses what I've witnessed in thousands of coaching hours — science and soul together, in uncommon balance. For leaders seeking the deeper meaning of emotional intelligence, a clear and dependable guide."</p>
+      <span class="who">Captain Dr. Shan Moorthi (Retd), IAC-CC — Founder & CEO, Teamcoach International; author of Coaching with R.E.S.P.E.C.T. and Coaching and the FIVE A'S</span>
+    </div>
+    <div class="quote">
+      <p>"Reading Emotionally Whole clarified something in me, its conviction that grace does its finest work in the very places we tend to hide. Weeks after finishing, I still reach for the mirror; what remains is not a set of competencies, but the discovery waiting at the door: it was already in our hands."</p>
+      <span class="who">Dr. Sebastian Koren — Author of Get Hired and Trilogy WFH; former Dean, Faculty of Arts & Social Science, Universiti Tunku Abdul Rahman, Kampar, Perak</span>
+    </div>
+  </div>
+</section>
 
-function render(reviews){
-  const list = $("#reviewList");
-  if(!reviews.length){ list.innerHTML = '<p class="empty">No reviews yet — yours could be the first.</p>';  return; }
-  const avg = reviews.reduce((s,r)=>s+(+r.rating||0),0)/reviews.length;
-  
-  reviews.sort((a,b)=> new Date(b.date) - new Date(a.date));
-  list.innerHTML = reviews.map(r => `
-    <div class="review">
-      <div class="top">
-        <div><span class="name">${esc(r.name)}</span></div>
-        <div style="text-align:right">
-          <div class="date">${fmtDate(r.date)}</div>
-        </div>
-      </div>
-      <div class="text">${esc(r.text)}</div>
-    </div>`).join("");
-}
+<section class="author fade">
+  <img src="images/author.png" alt="Winston H.K. Chew">
+  <div>
+    <span class="eyebrow">The author</span>
+    <h2>Three rooms, one instinct</h2>
+    <p>Winston H.K. Chew is an ordained minister and licensed counsellor who has spent three decades moving between three rooms that were, underneath, always doing the same work — the pulpit, the counselling room, and the boardroom — teaching emotional intelligence to corporate leaders across four continents by day, and sitting with people's grief by night.</p>
+    <p>Emotionally Whole is the book those three rooms finally wrote together.</p>
+  </div>
+</section>
 
-load();
-loadMC();
-</script>
-<footer style="border-top:1px solid var(--hair, rgba(233,225,206,0.14));padding:5vh 8vw;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;font-family:var(--mono, monospace);font-size:12px;letter-spacing:.06em;color:var(--vellum-dim, #B7AD95);">
-  <span>© 2026 Winston H.K. Chew</span>
-  <span style="display:flex;gap:18px;flex-wrap:wrap;"><a href="https://emotionallywhole.com/" style="color:inherit;">Emotionally Whole</a><a href="https://winstonchew.com/" target="_blank" rel="noopener" style="color:inherit;">winstonchew.com</a></span>
+<section class="contact fade" id="contact">
+  <span class="eyebrow">Get in touch</span>
+  <h2>Reach the author</h2>
+  <p>For speaking invitations, small-group and church enquiries, or a word about what the book surfaced for you, the author can be reached directly by email.</p>
+  <a class="mail" href="mailto:thrivemindxmento@gmail.com">thrivemindxmento@gmail.com</a>
+</section>
+
+<section class="buy fade" id="buy">
+  <span class="eyebrow">Available now</span>
+  <h2>A woman named Hannah stood in this exact gap three thousand years ago.</h2>
+  <div class="cta-row">
+    <a href="read-sample.html" class="btn solid">Read a Sample</a>
+    <a href="seminar.html" class="btn ghost">See the upcoming seminar →</a>
+  </div>
+</section>
+
+<footer>
+  <span>Emotionally Whole — Winston H.K. Chew</span>
+  <span><a href="emotional-intelligence-christian-leaders.html">Guide for Leaders</a> · <a href="seminar.html">Seminar</a> · Kuala Lumpur</span>
 </footer>
-</body>
+
+<script>
+  const targets = document.querySelectorAll('.fade');
+  const io = new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in');});},{threshold:0.12});
+  targets.forEach(t=>io.observe(t));
+</script>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v3d52b47920f24c319d37e2661827c42b1787588026925" integrity="sha512-d9sL6GJLXn6fInD1+TVXhTcQOsmxeHfmHAvwGDIxp5TO+uo1fiWW7mHomMj4MLRlCsJDTqXzWLHJFFlPCEIj/A==" data-cf-beacon='{"version":"2024.11.0","token":"23edc959a4054d97a32d53735a78340c","r":1}' crossorigin="anonymous"></script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3425e0a38624bd7',t:'MTc4ODI0NTcwNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
