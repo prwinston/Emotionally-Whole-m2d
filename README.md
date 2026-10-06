@@ -1,52 +1,77 @@
-# Emotionally Whole — website (static, two pages)
+# Emotionally Whole — Reviews (reviews.emotionallywhole.com)
 
-A static marketing site for *Emotionally Whole* by Winston H.K. Chew.
-No backend, no build step, no configuration — just files. Deploys anywhere
-that hosts static sites (Cloudflare Pages, Netlify, GitHub Pages).
+A standalone, **backend-free** reviews page. It simply displays the reviews you
+publish — you control the list entirely by editing one file. No form, no Google
+Sheet, no server.
 
 ## Files
 
+- `index.html` — the reviews page. Shows the reviews from `reviews.json`, with an
+  automatic average-star summary.
+- `reviews.json` — the reviews that appear on the page. This is the only file you
+  edit to add, change, or remove a review (your "admin only" — only you can change it).
+
+## Publishing / editing reviews
+
+`reviews.json` is a simple list. Each review is one block:
+
+```json
+[
+  {
+    "name": "Grace T., Penang",
+    "rating": 5,
+    "date": "2026-09-18",
+    "text": "The chapter on Nehemiah put words to something I'd carried for years."
+  },
+  {
+    "name": "Rev. Daniel L.",
+    "rating": 5,
+    "date": "2026-09-20",
+    "text": "Honest, scriptural, and quietly practical. I've recommended it to my elders."
+  }
+]
 ```
-index.html          main book page (hero, five domains, excerpt,
-                    endorsements, author, contact, buy)
-seminar.html        19 Oct 2026 teach-in page (hosted by Marketplace Mission)
-sitemap.xml         lists both pages for search engines
-robots.txt          allows crawlers, points to the sitemap
-images/
-  cover.png         book cover
-  author.png        author portrait
-  marketplace-mission.jpg   seminar host logo
+
+- `rating` is 1–5. `date` is `YYYY-MM-DD`. Keep commas between blocks; none after the last.
+- **Add** a review: paste a new block. **Edit**: change its text. **Remove**: delete its block.
+- The page recomputes the average and star summary automatically, newest first.
+
+However you gather reviews (email, in person, from a bookstore), you type the good
+ones into `reviews.json`, commit, and push.
+
+## EW Masterclass participant reviews
+
+A second section on the page, **EW Masterclass Participant Reviews**, reads from
+`masterclass-reviews.json`. Same format as `reviews.json`, plus an optional
+`event` line shown under the name:
+
+```json
+[
+  {
+    "name": "Pastor Grace T.",
+    "event": "EW Masterclass · JEN Hotel, Penang · 19 Oct 2026",
+    "rating": 5,
+    "date": "2026-10-19",
+    "text": "Three hours that gave our leadership team a shared language."
+  }
+]
 ```
 
-All files sit at the repository ROOT (same level), with images inside the
-`images/` folder. `index.html` links to `seminar.html` (announcement bar at the
-top, buttons in the footer and buy section); `seminar.html` links back to
-`index.html`.
+If the file is empty, the section says reviews will appear after the next Masterclass.
 
-## Key links baked in
+## Deploy the page (Cloudflare Pages)
 
-- Buy button → https://www.amazon.com/dp/B0HDDK3DB3
-- Contact email → thrivemindxmento@gmail.com
-- Seminar registration → WhatsApp 014-348 0134 (as wa.me/60143480134)
+1. Push this folder to its own GitHub repo.
+2. Cloudflare → **Workers & Pages → Create → Pages → Connect to Git**, pick the repo.
+   Framework preset **None**, build command blank, output directory **`/`**.
+3. **Custom domains → Set up a custom domain →** `reviews.emotionallywhole.com`
+   (the record is created for you since the zone is on your account).
 
-## Deploy (Cloudflare Pages via GitHub — current setup)
+To publish new reviews later, edit `reviews.json`, commit, and push — Cloudflare
+Pages redeploys automatically.
 
-Commit these files to the repo root. Cloudflare auto-redeploys on each push.
-No KV, no Functions, no bindings required — this is pure static.
+## Notes
 
-## SEO notes
-
-- Both pages have title tags, meta descriptions, keywords, canonical URLs,
-  Open Graph tags, and JSON-LD structured data (Book schema on index,
-  Event schema on seminar).
-- sitemap.xml and robots.txt are included. After deploying, submit the sitemap
-  in Google Search Console: Sitemaps > enter `sitemap.xml` > Submit.
-- All canonical/URL tags assume the live domain is https://emotionallywhole.com
-  — if the final domain differs, update those URLs in index.html, seminar.html,
-  sitemap.xml, and robots.txt.
-
-## Still to confirm
-
-- Seminar VENUE: currently "Penang · venue details to be confirmed" in
-  seminar.html — replace with the full venue name and address when known.
-- WhatsApp country code: links use 60 (Malaysia). Confirm this is correct.
+- If `reviews.json` is empty or missing, the page shows "No reviews yet."
+- Because nothing appears unless you put it in `reviews.json`, there's no spam or
+  moderation to manage.
