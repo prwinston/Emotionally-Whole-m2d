@@ -105,10 +105,13 @@
   .excerpt p{font-size:19px; margin-bottom:22px;}
   .excerpt .closing{font-family:var(--display); font-size:clamp(21px,2.4vw,28px); line-height:1.5; color:var(--door); margin-top:34px;}
 
-  .endorse{padding:12vh 8vw; border-bottom:1px solid var(--hair);}
-  .endorse .eyebrow{margin-bottom:40px;}
-  .quote-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:1px; background:var(--hair);}
-  .quote{background:var(--ink); padding:36px 30px; display:flex; flex-direction:column; justify-content:space-between;}
+  .endorse{padding:10vh 0 10vh 8vw; border-top:1px solid var(--hair); border-bottom:1px solid var(--hair);}
+  .endorse-head{display:flex; justify-content:space-between; align-items:baseline; gap:16px; padding-right:8vw; margin-bottom:34px;}
+  .scroll-hint{font-family:var(--mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--door);}
+  .quote-grid{display:flex; gap:20px; overflow-x:auto; scroll-snap-type:x mandatory; padding:0 8vw 22px 0; scrollbar-width:thin; scrollbar-color:rgba(216,169,78,0.5) transparent; -webkit-overflow-scrolling:touch;}
+  .quote-grid::-webkit-scrollbar{height:6px;}
+  .quote-grid::-webkit-scrollbar-thumb{background:rgba(216,169,78,0.45); border-radius:3px;}
+  .quote{flex:0 0 min(420px, 82vw); scroll-snap-align:start; background:rgba(233,225,206,0.03); border:1px solid var(--hair); border-radius:2px; padding:34px 30px; display:flex; flex-direction:column; justify-content:space-between;}
   .quote p{font-size:17px; line-height:1.65; font-style:italic;}
   .quote .who{margin-top:22px; font-family:var(--mono); font-size:12px; color:var(--vellum-dim); font-style:normal; line-height:1.6;}
 
@@ -251,7 +254,6 @@
     <p class="sub">You already know the vocabulary of emotional health. This book is about the gap between knowing it and living it.</p>
     <p class="sub" style="margin-top:-6px;">Every chapter has its own Reflections and Soul-Practices, making it well suited to small group discussion and discipleship sessions.</p>
     <div class="cta-row">
-      <a href="https://www.amazon.com/dp/B0HDDK3DB3" class="btn solid" target="_blank" rel="noopener">Buy on Amazon</a>
       <a href="#rooms" class="btn ghost">Walk through the five rooms ↓</a>
     </div>
   </div>
@@ -259,14 +261,45 @@
     <img src="images/cover.png" alt="Emotionally Whole book cover — a heavy wooden door with warm light breaking through its frame, above a darkened city at dusk">
   </div>
 
-  <div class="stores">
-    <span class="stores-label">Also available in Malaysia at</span>
-    <ul class="stores-list">
-      <li><a href="https://www.canaanland.com.my/SKU-A-9786299271000-UNIT-46474?search=emotionally%" target="_blank" rel="noopener">Canaanland Bookstore</a></li>
-      <li><a href="https://methodistbookroom.com/emotionally-whole" target="_blank" rel="noopener">Methodist Book Room</a></li>
-      <li><a href="https://www.gladsounds.com.my/products/emotionally-wholezo-from-the-mirror-to-the-door/120689/" target="_blank" rel="noopener">Glad Sounds Bookstore</a></li>
-      <li><a href="https://www.preciouspages.com.my/pd-emotionally-whole-from-the-mirror-to-the-door.cfm" target="_blank" rel="noopener">Precious Pages Resources</a></li>
-   </ul>
+</section>
+<section class="endorse fade" id="endorsements">
+  <div class="endorse-head">
+    <span class="eyebrow">Endorsed by</span>
+    <span class="scroll-hint">Scroll sideways →</span>
+  </div>
+  <div class="quote-grid">
+    <div class="quote">
+      <p>"Emotionally Whole by Winston Chew is a well-written and very helpful book (including Soul Practices) on the integration of Daniel Goleman's Emotional Intelligence (including appropriate critique) with biblical truth, using biblical characters … Highly recommended!"</p>
+      <span class="who">Rev. Dr. Siang-Yang Tan — Senior Professor of Clinical Psychology, Fuller Theological Seminary; Senior Pastor Emeritus, First Evangelical Church Glendale; author of Counseling and Psychotherapy: A Christian Perspective</span>
+    </div>
+    <div class="quote">
+      <p>"Leadership today is often defined by what we do and how we leverage our surroundings. Emotionally Whole looks deeper: at how God forms and reforms the person He uses, in a real and broken world. Informative, inspiring, and grounded in Scripture. I fully recommend it to anyone who wants a meaningful, fruitful ministry."</p>
+      <span class="who">Rev. Ong Sek Leang — General Superintendent, Assemblies of God Malaysia</span>
+    </div>
+    <div class="quote">
+      <p>"This work is a rare achievement…This book understands something essential about the Old Testament: that God's redemptive work unfolds through wounded and vulnerable people healed by divine grace. Emotionally Whole is not merely a book about psychology and emotion. It is a theological reflection on what it means to be fully healed by God."</p>
+      <span class="who">Rev. Dr. Elaine Goh — Dean of Postgraduate Studies and faculty in Old Testament Studies, Seminari Theoloji Malaysia</span>
+    </div>
+    <div class="quote">
+      <p>"What makes it distinctive is its refusal to present the heroes of Scripture as flawless examples. Their failures become the precise sites where grace does its deepest work, and what God forms in a person before the test determines what they carry into it. This is not merely a book to be read. It is a book to be experienced. Emotional maturity is not an optional addition to the Christian life; it is an expression of spiritual formation itself."</p>
+      <span class="who">Dato' Peter Ng — Executive Chairman and Founder, UCSI Group</span>
+    </div>
+    <div class="quote">
+      <p>"Many Christian leaders are gifted in ministry yet struggle with emotional health. Emotionally Whole demonstrates that emotional maturity is not a secular ideal but essential to Christlike discipleship, written for those who do God's work, and desire to become the people through whom God can work."</p>
+      <span class="who">Rev. Dr. Victor Lee — President, Bible College of Malaysia</span>
+    </div>
+    <div class="quote">
+      <p>"It was Socrates who said 'the unexamined life is not worth living'. Emotionally Whole helps in that process by giving voice and handle towards the well-being of one's soul and recovering what may have been lost in one's life. Highly recommended for all in the ministry of the Kingdom of God."</p>
+      <span class="who">Rev. Dr. Herbert Tan — National Director, Family Ministries Malaysia; Founding Director of the D6 Family Ministry Movement in Malaysia</span>
+    </div>
+    <div class="quote">
+      <p>"Since founding Teamcoach International in 1999, I've seen one truth again and again: leadership flourishes through the conversations leaders shape. Emotionally Whole expresses what I've witnessed in thousands of coaching hours — science and soul together, in uncommon balance. For leaders seeking the deeper meaning of emotional intelligence, a clear and dependable guide."</p>
+      <span class="who">Captain Dr. Shan Moorthi (Retd), IAC-CC — Founder & CEO, Teamcoach International; author of Coaching with R.E.S.P.E.C.T. and Coaching and the FIVE A'S</span>
+    </div>
+    <div class="quote">
+      <p>"Reading Emotionally Whole clarified something in me, its conviction that grace does its finest work in the very places we tend to hide. Weeks after finishing, I still reach for the mirror; what remains is not a set of competencies, but the discovery waiting at the door: it was already in our hands."</p>
+      <span class="who">Dr. Sebastian Koren — Author of Get Hired and Trilogy WFH; former Dean, Faculty of Arts & Social Science, Universiti Tunku Abdul Rahman, Kampar, Perak</span>
+    </div>
   </div>
 </section>
   <section class="premise fade">
@@ -363,44 +396,6 @@
   <p class="closing">Go back to Shiloh. Bring what you're carrying. Say what is true — with precision, without performance, without apology. Leave with your face no longer sad. Because you’ve been faithfully present, and the God who bent to hear Hannah is, after all that has unfolded, remains attentive.</p>
 </section>
 
-<section class="endorse fade">
-  <span class="eyebrow">Endorsed by</span>
-  <div class="quote-grid">
-    <div class="quote">
-      <p>"Emotionally Whole by Winston Chew is a well-written and very helpful book (including Soul Practices) on the integration of Daniel Goleman's Emotional Intelligence (including appropriate critique) with biblical truth, using biblical characters … Highly recommended!"</p>
-      <span class="who">Rev. Dr. Siang-Yang Tan — Senior Professor of Clinical Psychology, Fuller Theological Seminary; Senior Pastor Emeritus, First Evangelical Church Glendale; author of Counseling and Psychotherapy: A Christian Perspective</span>
-    </div>
-    <div class="quote">
-      <p>"Leadership today is often defined by what we do and how we leverage our surroundings. Emotionally Whole looks deeper: at how God forms and reforms the person He uses, in a real and broken world. Informative, inspiring, and grounded in Scripture. I fully recommend it to anyone who wants a meaningful, fruitful ministry."</p>
-      <span class="who">Rev. Ong Sek Leang — General Superintendent, Assemblies of God Malaysia</span>
-    </div>
-    <div class="quote">
-      <p>"This work is a rare achievement…This book understands something essential about the Old Testament: that God's redemptive work unfolds through wounded and vulnerable people healed by divine grace. Emotionally Whole is not merely a book about psychology and emotion. It is a theological reflection on what it means to be fully healed by God."</p>
-      <span class="who">Rev. Dr. Elaine Goh — Dean of Postgraduate Studies and faculty in Old Testament Studies, Seminari Theoloji Malaysia</span>
-    </div>
-    <div class="quote">
-      <p>"What makes it distinctive is its refusal to present the heroes of Scripture as flawless examples. Their failures become the precise sites where grace does its deepest work, and what God forms in a person before the test determines what they carry into it. This is not merely a book to be read. It is a book to be experienced. Emotional maturity is not an optional addition to the Christian life; it is an expression of spiritual formation itself."</p>
-      <span class="who">Dato' Peter Ng — Executive Chairman and Founder, UCSI Group</span>
-    </div>
-    <div class="quote">
-      <p>"Many Christian leaders are gifted in ministry yet struggle with emotional health. Emotionally Whole demonstrates that emotional maturity is not a secular ideal but essential to Christlike discipleship, written for those who do God's work, and desire to become the people through whom God can work."</p>
-      <span class="who">Rev. Dr. Victor Lee — President, Bible College of Malaysia</span>
-    </div>
-    <div class="quote">
-      <p>"It was Socrates who said 'the unexamined life is not worth living'. Emotionally Whole helps in that process by giving voice and handle towards the well-being of one's soul and recovering what may have been lost in one's life. Highly recommended for all in the ministry of the Kingdom of God."</p>
-      <span class="who">Rev. Dr. Herbert Tan — National Director, Family Ministries Malaysia; Founding Director of the D6 Family Ministry Movement in Malaysia</span>
-    </div>
-    <div class="quote">
-      <p>"Since founding Teamcoach International in 1999, I've seen one truth again and again: leadership flourishes through the conversations leaders shape. Emotionally Whole expresses what I've witnessed in thousands of coaching hours — science and soul together, in uncommon balance. For leaders seeking the deeper meaning of emotional intelligence, a clear and dependable guide."</p>
-      <span class="who">Captain Dr. Shan Moorthi (Retd), IAC-CC — Founder & CEO, Teamcoach International; author of Coaching with R.E.S.P.E.C.T. and Coaching and the FIVE A'S</span>
-    </div>
-    <div class="quote">
-      <p>"Reading Emotionally Whole clarified something in me, its conviction that grace does its finest work in the very places we tend to hide. Weeks after finishing, I still reach for the mirror; what remains is not a set of competencies, but the discovery waiting at the door: it was already in our hands."</p>
-      <span class="who">Dr. Sebastian Koren — Author of Get Hired and Trilogy WFH; former Dean, Faculty of Arts & Social Science, Universiti Tunku Abdul Rahman, Kampar, Perak</span>
-    </div>
-  </div>
-</section>
-
 <section class="author fade">
   <img src="images/author.png" alt="Winston H.K. Chew">
   <div>
@@ -415,7 +410,7 @@
 <section class="contact fade" id="contact">
   <span class="eyebrow">Get in touch</span>
   <h2>Reach the author</h2>
-  <p>For speaking invitations to conduct an Emotionally Whole Masterclass, Church Camp, Leadership Camp, Men's Ministry, Family Ministry, or Marketplace Ministry — the author can be reached directly by email.</p>
+  <p>For speaking invitations to conduct an Emotionally Whole Masterclass, Church Camp, Leadership Camp, Men's Ministry, Family Ministry, or Marketplace Ministry — including the topic <em>Developing Emotional Wellness for Life and Ministry</em> — the author can be reached directly by email.</p>
   <a class="mail" href="mailto:thrivemindxmento@gmail.com">thrivemindxmento@gmail.com</a>
 </section>
 
